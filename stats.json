@@ -5,7 +5,95 @@
   "avg_req_per_user": 2.2,
   "peak_month": "2025-08",
   "peak_requests": 80,
-  "top_users": [],
-  "top_topics": [],
-  "monthly": []
+  "top_users": [
+    {
+      "name": "l.thery@dental-monitoring.com",
+      "count": 12
+    },
+    {
+      "name": "Lily Carter",
+      "count": 11
+    },
+    {
+      "name": "Maggie",
+      "count": 9
+    },
+    {
+      "name": "r.penney@dental-monitoring.com",
+      "count": 9
+    },
+    {
+      "name": "justine",
+      "count": 7
+    }
+  ],
+  "top_topics": [
+    {
+      "label": "Braces",
+      "count": 65
+    },
+    {
+      "label": "SmartSTL",
+      "count": 23
+    },
+    {
+      "label": "Practice efficiency",
+      "count": 17
+    },
+    {
+      "label": "AI accuracy",
+      "count": 17
+    },
+    {
+      "label": "Aligners",
+      "count": 16
+    }
+  ],
+  "monthly": [
+    {
+      "month": "2025-07",
+      "requests": 25,
+      "users": 14
+    },
+    {
+      "month": "2025-08",
+      "requests": 80,
+      "users": 62
+    },
+    {
+      "month": "2025-09",
+      "requests": 48,
+      "users": 32
+    },
+    {
+      "month": "2025-10",
+      "requests": 45,
+      "users": 29
+    },
+    {
+      "month": "2025-11",
+      "requests": 18,
+      "users": 12
+    },
+    {
+      "month": "2025-12",
+      "requests": 10,
+      "users": 9
+    },
+    {
+      "month": "2026-01",
+      "requests": 15,
+      "users": 9
+    },
+    {
+      "month": "2026-02",
+      "requests": 10,
+      "users": 8
+    },
+    {
+      "month": "2026-03",
+      "requests": 20,
+      "users": 13
+    }
+  ]
 }
