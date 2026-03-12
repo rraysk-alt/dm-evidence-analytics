@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evidence Query Workflow — Usage Analysis</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f1f5f9; color: #0f172a; padding: 32px 16px; }
+  .container { max-width: 960px; margin: 0 auto; }
+ 
+  .header { background: #00a3ad; border-radius: 12px; padding: 28px 32px; margin-bottom: 28px; display: flex; justify-content: space-between; align-items: center; }
+  .header h1 { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+  .header p { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.1em; }
+  .header-right { text-align: right; }
+  .updated-badge { font-size: 11px; color: rgba(255,255,255,0.7); }
+  .updated-date { font-size: 14px; font-weight: 700; color: #fff; margin-top: 2px; }
+ 
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
+  .kpi-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px 24px; }
+  .kpi-label { font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+  .kpi-value { font-size: 32px; font-weight: 800; color: #00a3ad; line-height: 1; }
+  .kpi-sub { font-size: 12px; color: #64748b; margin-top: 4px; }
+ 
+  .section { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; }
+  .section-title { font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; }
+  .chart-wrap { position: relative; height: 260px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
+ 
+  .bar-list { list-style: none; }
+  .bar-item { margin-bottom: 14px; }
+  .bar-meta { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .bar-name { font-size: 13px; font-weight: 600; color: #0f172a; }
+  .bar-count { font-size: 13px; font-weight: 700; color: #00a3ad; }
+  .bar-track { background: #f1f5f9; border-radius: 99px; height: 8px; }
+  .bar-fill { background: #00a3ad; border-radius: 99px; height: 8px; }
+ 
+  .mau-table { width: 100%; border-collapse: collapse; }
+  .mau-table th { font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; padding: 8px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+  .mau-table td { font-size: 13px; padding: 10px 12px; border-bottom: 1px solid #f1f5f9; }
+  .mau-table tr:last-child td { border-bottom: none; }
+  .num { font-weight: 700; color: #00a3ad; }
+ 
+  .need-item { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #f1f5f9; }
+  .need-item:last-child { border-bottom: none; }
+  .need-rank { flex-shrink: 0; width: 28px; height: 28px; background: #e6f7f8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; color: #00a3ad; }
+  .need-content .need-title { font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 3px; }
+  .need-content .need-desc { font-size: 13px; color: #64748b; line-height: 1.5; }
+  .need-badge { flex-shrink: 0; font-size: 11px; font-weight: 700; background: #dbeafe; color: #1d4ed8; padding: 3px 10px; border-radius: 20px; white-space: nowrap; margin-top: 3px; }
+ 
+  .loading { text-align: center; padding: 40px; color: #94a3b8; font-size: 14px; }
+  .footer { text-align: center; font-size: 11px; color: #94a3b8; margin-top: 32px; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+<div class="container">
+ 
+  <div class="header">
+    <div>
+      <h1>DentalMonitoring — Evidence Query Workflow</h1>
+      <p>Usage Analysis · Excluding internal test accounts</p>
+    </div>
+    <div class="header-right">
+      <div class="updated-badge">Last updated</div>
+      <div class="updated-date" id="updated-date">Loading…</div>
+    </div>
+  </div>
+ 
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Total Requests</div>
+      <div class="kpi-value" id="kpi-total">—</div>
+      <div class="kpi-sub">Excl. internal accounts</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Unique Users</div>
+      <div class="kpi-value" id="kpi-users">—</div>
+      <div class="kpi-sub">Across all markets</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Avg Requests/User</div>
+      <div class="kpi-value" id="kpi-avg">—</div>
+      <div class="kpi-sub">Repeat usage signal</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">Peak Month</div>
+      <div class="kpi-value" id="kpi-peak">—</div>
+      <div class="kpi-sub" id="kpi-peak-sub">—</div>
+    </div>
+  </div>
+ 
+  <div class="section">
+    <div class="section-title">📈 Usage Evolution — Requests & Active Users by Month</div>
+    <div class="chart-wrap">
+      <canvas id="usageChart"></canvas>
+    </div>
+  </div>
+ 
+  <div class="two-col">
+    <div class="section" style="margin-bottom:0;">
+      <div class="section-title">👤 Top 5 Users</div>
+      <ul class="bar-list" id="top-users"><li class="loading">Loading…</li></ul>
+    </div>
+    <div class="section" style="margin-bottom:0;">
+      <div class="section-title">🏷️ Top 5 Topics</div>
+      <ul class="bar-list" id="top-topics"><li class="loading">Loading…</li></ul>
+    </div>
+  </div>
+ 
+  <div class="section" style="margin-top:24px;">
+    <div class="section-title">📅 Monthly Active Users & Request Volume</div>
+    <table class="mau-table">
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Requests</th>
+          <th>Active Users</th>
+          <th>Avg req/user</th>
+        </tr>
+      </thead>
+      <tbody id="mau-tbody"><tr><td colspan="4" class="loading">Loading…</td></tr></tbody>
+    </table>
+  </div>
+ 
+  <!-- Top 10 needs are static (qualitative analysis, doesn't change with new data) -->
+  <div class="section">
+    <div class="section-title">💡 Top 10 Needs — From "Describe what you're looking for"</div>
+    <div class="need-item">
+      <div class="need-rank">1</div>
+      <div class="need-content">
+        <div class="need-title">Chairtime & Appointment Reduction</div>
+        <div class="need-desc">Reps need hard numbers to show doctors how DM reduces chair time and number of visits — for braces and aligners alike. Most recurring need in the dataset.</div>
+      </div>
+      <div class="need-badge">~45 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">2</div>
+      <div class="need-content">
+        <div class="need-title">ROI & Practice Profitability</div>
+        <div class="need-desc">Doctors asking "show me the money" — reps want evidence that DM translates into measurable financial return, staff cost savings, and practice growth.</div>
+      </div>
+      <div class="need-badge">~30 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">3</div>
+      <div class="need-content">
+        <div class="need-title">SmartSTL Accuracy vs Intraoral Scan</div>
+        <div class="need-desc">Sceptical doctors challenge whether SmartSTL is as reliable as a physical intraoral scan. Reps need clinical proof of accuracy, sensitivity, and specificity data.</div>
+      </div>
+      <div class="need-badge">~25 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">4</div>
+      <div class="need-content">
+        <div class="need-title">Academic / Peer-Reviewed Publications Only</div>
+        <div class="need-desc">A segment of reps (and their doctors) only trust academic papers — explicitly requesting peer-reviewed journals, not white papers or case studies.</div>
+      </div>
+      <div class="need-badge">~22 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">5</div>
+      <div class="need-content">
+        <div class="need-title">AI Accuracy & Reliability</div>
+        <div class="need-desc">Patients and doctors questioning whether DM's AI correctly detects clinical observations — reps need data on detection rates, false positives/negatives.</div>
+      </div>
+      <div class="need-badge">~20 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">6</div>
+      <div class="need-content">
+        <div class="need-title">Braces-Specific Evidence (Fixed Appliances)</div>
+        <div class="need-desc">Reps dealing with braces-sceptic doctors — need evidence tailored to fixed appliance monitoring, including self-ligating, Damon, Twin brackets, and brand-specific data.</div>
+      </div>
+      <div class="need-badge">~20 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">7</div>
+      <div class="need-content">
+        <div class="need-title">Patient Experience & Compliance</div>
+        <div class="need-desc">Evidence that patients like using DM, comply better with aligners, and have better outcomes — used to convince doctors that patient satisfaction improves with monitoring.</div>
+      </div>
+      <div class="need-badge">~18 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">8</div>
+      <div class="need-content">
+        <div class="need-title">Practice Workflow & Staff Efficiency</div>
+        <div class="need-desc">How DM changes day-to-day practice operations — staff workload, scheduling on demand, reducing admin burden, and scaling without adding headcount.</div>
+      </div>
+      <div class="need-badge">~15 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">9</div>
+      <div class="need-content">
+        <div class="need-title">Retention Monitoring Value</div>
+        <div class="need-desc">Convincing doctors that monitoring retention phases is worthwhile — evidence on compliance, lapse rates, and clinical outcomes for retention patients.</div>
+      </div>
+      <div class="need-badge">~12 mentions</div>
+    </div>
+    <div class="need-item">
+      <div class="need-rank">10</div>
+      <div class="need-content">
+        <div class="need-title">Aligner Brand-Specific Evidence (Spark, Damon, Invisalign, Angel…)</div>
+        <div class="need-desc">Reps working with specific brands need evidence scoped to that brand — Spark, Damon, Invisalign, Angel, KLOwen, Lightforce — not generic DM evidence.</div>
+      </div>
+      <div class="need-badge">~12 mentions</div>
+    </div>
+  </div>
+ 
+  <div class="footer">DentalMonitoring · Evidence Query Workflow Analysis · Auto-updated weekly via n8n</div>
+</div>
+ 
+<script>
+const STATS_URL = 'https://raw.githubusercontent.com/rraysk-alt/dm-evidence-analytics/main/stats.json';
+let usageChart = null;
+ 
+function fmtMonth(m) {
+  const [y, mo] = m.split('-');
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `${months[parseInt(mo)-1]} ${y.slice(2)}`;
+}
+ 
+function renderBarList(id, items) {
+  const max = items[0]?.count || 1;
+  document.getElementById(id).innerHTML = items.map(item => `
+    <li class="bar-item">
+      <div class="bar-meta">
+        <span class="bar-name">${item.label || item.name}</span>
+        <span class="bar-count">${item.count}</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width:${Math.round((item.count/max)*100)}%"></div>
+      </div>
+    </li>
+  `).join('');
+}
+ 
+function renderChart(monthly) {
+  const labels   = monthly.map(m => fmtMonth(m.month));
+  const requests = monthly.map(m => m.requests);
+  const users    = monthly.map(m => m.users);
+ 
+  if (usageChart) usageChart.destroy();
+  usageChart = new Chart(document.getElementById('usageChart').getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Requests',
+          data: requests,
+          backgroundColor: 'rgba(0, 163, 173, 0.85)',
+          borderRadius: 6,
+          yAxisID: 'y'
+        },
+        {
+          label: 'Active Users',
+          data: users,
+          type: 'line',
+          borderColor: '#7c3aed',
+          backgroundColor: 'rgba(124, 58, 237, 0.1)',
+          borderWidth: 2.5,
+          pointBackgroundColor: '#7c3aed',
+          pointRadius: 5,
+          tension: 0.3,
+          fill: true,
+          yAxisID: 'y2'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { position: 'top', labels: { font: { size: 12 }, padding: 16 } }
+      },
+      scales: {
+        y:  { type: 'linear', position: 'left',  title: { display: true, text: 'Requests',     font: { size: 11 } }, grid: { color: '#f1f5f9' }, ticks: { font: { size: 11 } } },
+        y2: { type: 'linear', position: 'right', title: { display: true, text: 'Active Users', font: { size: 11 } }, grid: { drawOnChartArea: false }, ticks: { font: { size: 11 } } },
+        x:  { ticks: { font: { size: 11 } }, grid: { display: false } }
+      }
+    }
+  });
+}
+ 
+function renderMAU(monthly) {
+  const rows = [...monthly].reverse().map((m, i, arr) => {
+    const prev = arr[i + 1];
+    let trend = '';
+    if (!prev) {
+      trend = '<span style="color:#7c3aed;font-size:12px;font-weight:600;">▶ First</span>';
+    } else {
+      const pct = Math.round(((m.requests - prev.requests) / prev.requests) * 100);
+      const color = pct >= 0 ? '#16a34a' : '#dc2626';
+      const arrow = pct >= 0 ? '▲' : '▼';
+      trend = `<span style="color:${color};font-size:12px;font-weight:600;">${arrow} ${pct > 0 ? '+' : ''}${pct}%</span>`;
+    }
+    const avg = m.users ? Math.round((m.requests / m.users) * 10) / 10 : '—';
+    return `<tr>
+      <td>${fmtMonth(m.month)}</td>
+      <td class="num">${m.requests}</td>
+      <td class="num">${m.users}</td>
+      <td>${avg}</td>
+      <td>${trend}</td>
+    </tr>`;
+  });
+  document.getElementById('mau-tbody').innerHTML = rows.join('');
+}
+ 
+async function loadStats() {
+  try {
+    const res  = await fetch(STATS_URL + '?t=' + Date.now());
+    const data = await res.json();
+ 
+    document.getElementById('updated-date').textContent = data.updated || '—';
+    document.getElementById('kpi-total').textContent    = data.total_requests?.toLocaleString() || '—';
+    document.getElementById('kpi-users').textContent    = data.unique_users?.toLocaleString() || '—';
+    document.getElementById('kpi-avg').textContent      = data.avg_req_per_user || '—';
+    document.getElementById('kpi-peak').textContent     = data.peak_month ? fmtMonth(data.peak_month) : '—';
+    document.getElementById('kpi-peak-sub').textContent = data.peak_requests ? `${data.peak_requests} requests` : '—';
+ 
+    renderBarList('top-users',  data.top_users  || []);
+    renderBarList('top-topics', data.top_topics || []);
+    renderChart(data.monthly   || []);
+    renderMAU(data.monthly     || []);
+ 
+  } catch (e) {
+    document.getElementById('updated-date').textContent = 'Error loading data';
+    console.error('Failed to load stats.json:', e);
+  }
+}
+ 
+loadStats();
+</script>
+</body>
+</html>
