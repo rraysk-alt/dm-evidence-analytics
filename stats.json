@@ -1,8 +1,8 @@
 {
-  "updated": "2026-04-21",
-  "total_requests": 330,
-  "unique_users": 166,
-  "avg_req_per_user": 2,
+  "updated": "2026-05-04",
+  "total_requests": 345,
+  "unique_users": 177,
+  "avg_req_per_user": 1.9,
   "peak_month": "2025-08",
   "peak_requests": 80,
   "top_users": [
@@ -23,14 +23,14 @@
       "count": 9
     },
     {
-      "name": "justine",
+      "name": "gemma",
       "count": 7
     }
   ],
   "top_topics": [
     {
       "label": "Braces",
-      "count": 67
+      "count": 68
     },
     {
       "label": "SmartSTL",
@@ -41,11 +41,11 @@
       "count": 23
     },
     {
-      "label": "Patient experience",
-      "count": 18
+      "label": "AI accuracy",
+      "count": 20
     },
     {
-      "label": "Practice efficiency",
+      "label": "Patient experience",
       "count": 18
     }
   ],
@@ -97,8 +97,8 @@
     },
     {
       "month": "2026-04",
-      "requests": 44,
-      "users": 41
+      "requests": 59,
+      "users": 53
     }
   ]
 }
