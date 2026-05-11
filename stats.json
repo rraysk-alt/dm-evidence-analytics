@@ -1,8 +1,8 @@
 {
-  "updated": "2026-05-04",
-  "total_requests": 345,
-  "unique_users": 177,
-  "avg_req_per_user": 1.9,
+  "updated": "2026-05-11",
+  "total_requests": 352,
+  "unique_users": 179,
+  "avg_req_per_user": 2,
   "peak_month": "2025-08",
   "peak_requests": 80,
   "top_users": [
@@ -23,8 +23,8 @@
       "count": 9
     },
     {
-      "name": "gemma",
-      "count": 7
+      "name": "Justine Riccio",
+      "count": 8
     }
   ],
   "top_topics": [
@@ -34,7 +34,7 @@
     },
     {
       "label": "SmartSTL",
-      "count": 26
+      "count": 27
     },
     {
       "label": "Aligners",
@@ -42,7 +42,7 @@
     },
     {
       "label": "AI accuracy",
-      "count": 20
+      "count": 21
     },
     {
       "label": "Patient experience",
@@ -99,6 +99,11 @@
       "month": "2026-04",
       "requests": 59,
       "users": 53
+    },
+    {
+      "month": "2026-05",
+      "requests": 7,
+      "users": 5
     }
   ]
 }
