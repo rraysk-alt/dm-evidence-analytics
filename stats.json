@@ -1,7 +1,7 @@
 {
-  "updated": "2026-05-11",
-  "total_requests": 352,
-  "unique_users": 179,
+  "updated": "2026-05-18",
+  "total_requests": 363,
+  "unique_users": 186,
   "avg_req_per_user": 2,
   "peak_month": "2025-08",
   "peak_requests": 80,
@@ -38,7 +38,7 @@
     },
     {
       "label": "Aligners",
-      "count": 23
+      "count": 25
     },
     {
       "label": "AI accuracy",
@@ -102,8 +102,8 @@
     },
     {
       "month": "2026-05",
-      "requests": 7,
-      "users": 5
+      "requests": 18,
+      "users": 15
     }
   ]
 }
