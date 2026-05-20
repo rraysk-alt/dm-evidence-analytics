@@ -123,89 +123,9 @@
     </table>
   </div>
  
-  <!-- Top 10 needs are static (qualitative analysis, doesn't change with new data) -->
   <div class="section">
-    <div class="section-title">💡 Top 10 Needs — From "Describe what you're looking for"</div>
-    <div class="need-item">
-      <div class="need-rank">1</div>
-      <div class="need-content">
-        <div class="need-title">Chairtime & Appointment Reduction</div>
-        <div class="need-desc">Reps need hard numbers to show doctors how DM reduces chair time and number of visits — for braces and aligners alike. Most recurring need in the dataset.</div>
-      </div>
-      <div class="need-badge">~45 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">2</div>
-      <div class="need-content">
-        <div class="need-title">ROI & Practice Profitability</div>
-        <div class="need-desc">Doctors asking "show me the money" — reps want evidence that DM translates into measurable financial return, staff cost savings, and practice growth.</div>
-      </div>
-      <div class="need-badge">~30 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">3</div>
-      <div class="need-content">
-        <div class="need-title">SmartSTL Accuracy vs Intraoral Scan</div>
-        <div class="need-desc">Sceptical doctors challenge whether SmartSTL is as reliable as a physical intraoral scan. Reps need clinical proof of accuracy, sensitivity, and specificity data.</div>
-      </div>
-      <div class="need-badge">~25 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">4</div>
-      <div class="need-content">
-        <div class="need-title">Academic / Peer-Reviewed Publications Only</div>
-        <div class="need-desc">A segment of reps (and their doctors) only trust academic papers — explicitly requesting peer-reviewed journals, not white papers or case studies.</div>
-      </div>
-      <div class="need-badge">~22 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">5</div>
-      <div class="need-content">
-        <div class="need-title">AI Accuracy & Reliability</div>
-        <div class="need-desc">Patients and doctors questioning whether DM's AI correctly detects clinical observations — reps need data on detection rates, false positives/negatives.</div>
-      </div>
-      <div class="need-badge">~20 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">6</div>
-      <div class="need-content">
-        <div class="need-title">Braces-Specific Evidence (Fixed Appliances)</div>
-        <div class="need-desc">Reps dealing with braces-sceptic doctors — need evidence tailored to fixed appliance monitoring, including self-ligating, Damon, Twin brackets, and brand-specific data.</div>
-      </div>
-      <div class="need-badge">~20 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">7</div>
-      <div class="need-content">
-        <div class="need-title">Patient Experience & Compliance</div>
-        <div class="need-desc">Evidence that patients like using DM, comply better with aligners, and have better outcomes — used to convince doctors that patient satisfaction improves with monitoring.</div>
-      </div>
-      <div class="need-badge">~18 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">8</div>
-      <div class="need-content">
-        <div class="need-title">Practice Workflow & Staff Efficiency</div>
-        <div class="need-desc">How DM changes day-to-day practice operations — staff workload, scheduling on demand, reducing admin burden, and scaling without adding headcount.</div>
-      </div>
-      <div class="need-badge">~15 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">9</div>
-      <div class="need-content">
-        <div class="need-title">Retention Monitoring Value</div>
-        <div class="need-desc">Convincing doctors that monitoring retention phases is worthwhile — evidence on compliance, lapse rates, and clinical outcomes for retention patients.</div>
-      </div>
-      <div class="need-badge">~12 mentions</div>
-    </div>
-    <div class="need-item">
-      <div class="need-rank">10</div>
-      <div class="need-content">
-        <div class="need-title">Aligner Brand-Specific Evidence (Spark, Damon, Invisalign, Angel…)</div>
-        <div class="need-desc">Reps working with specific brands need evidence scoped to that brand — Spark, Damon, Invisalign, Angel, KLOwen, Lightforce — not generic DM evidence.</div>
-      </div>
-      <div class="need-badge">~12 mentions</div>
-    </div>
+    <div class="section-title">💡 Top 10 Needs — By Topic Frequency</div>
+    <div id="top-needs"><div class="loading">Loading…</div></div>
   </div>
  
   <div class="footer">DentalMonitoring · Evidence Query Workflow Analysis · Auto-updated weekly via n8n</div>
@@ -309,6 +229,12 @@ function renderMAU(monthly) {
   document.getElementById('mau-tbody').innerHTML = rows.join('');
 }
  
+function renderNeeds(items) {
+  document.getElementById('top-needs').innerHTML = items.map(function(item, i) {
+    return '<div class="need-item"><div class="need-rank">' + (i + 1) + '</div><div class="need-content"><div class="need-title">' + (item.label || item.name) + '</div></div><div class="need-badge">' + item.count + ' mentions</div></div>';
+  }).join('');
+}
+
 async function loadStats() {
   try {
     const res  = await fetch(STATS_URL + '?t=' + Date.now());
