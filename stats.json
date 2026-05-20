@@ -1,8 +1,8 @@
 {
-  "updated": "2026-05-18",
-  "total_requests": 363,
-  "unique_users": 186,
-  "avg_req_per_user": 2,
+  "updated": "2026-05-20",
+  "total_requests": 365,
+  "unique_users": 188,
+  "avg_req_per_user": 1.9,
   "peak_month": "2025-08",
   "peak_requests": 80,
   "top_users": [
@@ -47,6 +47,48 @@
     {
       "label": "Patient experience",
       "count": 18
+    }
+  ],
+  "top_needs": [
+    {
+      "label": "Braces",
+      "count": 68
+    },
+    {
+      "label": "SmartSTL",
+      "count": 27
+    },
+    {
+      "label": "Aligners",
+      "count": 25
+    },
+    {
+      "label": "AI accuracy",
+      "count": 21
+    },
+    {
+      "label": "Patient experience",
+      "count": 18
+    },
+    {
+      "label": "Practice efficiency",
+      "count": 18
+    },
+    {
+      "label": "Practice workflow with DM",
+      "count": 15
+    },
+    {
+      "label": "Retention",
+      "count": 12
+    },
+    {
+      "label": "AI accuracy, AI Overview, Aligners, Braces, Hygiene, DMC Satisfaction, Engage, Patient experience, Phase 1, Retention, SmartSTL, Practice efficiency, Practice workflow with DM",
+      "count": 11
+    },
+    {
+      "label": "AI accuracy, AI Overview, Aligners, Braces, Hygiene, DMC Satisfaction, Engage, Patient experience, Phase 1, Observation, Retention, SmartSTL, Practice efficiency, Practice workflow with DM, DM Insights",
+      "count": 10
     }
   ],
   "monthly": [
@@ -102,8 +144,8 @@
     },
     {
       "month": "2026-05",
-      "requests": 18,
-      "users": 15
+      "requests": 20,
+      "users": 17
     }
   ]
 }
