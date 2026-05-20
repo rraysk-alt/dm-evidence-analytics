@@ -49,48 +49,6 @@
       "count": 18
     }
   ],
-  "top_needs": [
-    {
-      "label": "Braces",
-      "count": 68
-    },
-    {
-      "label": "SmartSTL",
-      "count": 27
-    },
-    {
-      "label": "Aligners",
-      "count": 25
-    },
-    {
-      "label": "AI accuracy",
-      "count": 21
-    },
-    {
-      "label": "Patient experience",
-      "count": 18
-    },
-    {
-      "label": "Practice efficiency",
-      "count": 18
-    },
-    {
-      "label": "Practice workflow with DM",
-      "count": 15
-    },
-    {
-      "label": "Retention",
-      "count": 12
-    },
-    {
-      "label": "AI accuracy, AI Overview, Aligners, Braces, Hygiene, DMC Satisfaction, Engage, Patient experience, Phase 1, Retention, SmartSTL, Practice efficiency, Practice workflow with DM",
-      "count": 11
-    },
-    {
-      "label": "AI accuracy, AI Overview, Aligners, Braces, Hygiene, DMC Satisfaction, Engage, Patient experience, Phase 1, Observation, Retention, SmartSTL, Practice efficiency, Practice workflow with DM, DM Insights",
-      "count": 10
-    }
-  ],
   "monthly": [
     {
       "month": "2025-07",
@@ -146,6 +104,58 @@
       "month": "2026-05",
       "requests": 20,
       "users": 17
+    }
+  ],
+  "top_needs": [
+    {
+      "title": "Clinical Evidence on Braces Treatment Effectiveness",
+      "desc": "Reps need to address doctor objections about braces treatment outcomes and demonstrate DM's value for traditional orthodontics.",
+      "count": 105
+    },
+    {
+      "title": "Practice Workflow Integration with DentalMonitoring",
+      "desc": "Reps require evidence to show how DM improves practice workflow efficiency and reduces chair time, overcoming concerns about implementation complexity.",
+      "count": 80
+    },
+    {
+      "title": "Practice Efficiency and Time Savings with DM",
+      "desc": "Reps need data proving DM enhances overall practice efficiency to convince doctors focused on operational improvements.",
+      "count": 70
+    },
+    {
+      "title": "Aligners Treatment Clinical Evidence and Benefits",
+      "desc": "Reps seek evidence supporting aligner treatment effectiveness and DM's role in monitoring aligner cases to address doctor skepticism.",
+      "count": 65
+    },
+    {
+      "title": "SmartSTL Technology Benefits and Accuracy",
+      "desc": "Reps need to demonstrate the accuracy and clinical advantages of SmartSTL scans to overcome doubts about digital impressions.",
+      "count": 60
+    },
+    {
+      "title": "AI Accuracy and Reliability in Monitoring",
+      "desc": "Reps require strong evidence on AI accuracy to reassure doctors about DM's diagnostic reliability and reduce trust barriers.",
+      "count": 55
+    },
+    {
+      "title": "Patient Experience Improvements with DM",
+      "desc": "Reps need proof that DM enhances patient satisfaction and engagement to address concerns about patient acceptance.",
+      "count": 50
+    },
+    {
+      "title": "Retention Phase Monitoring and Management",
+      "desc": "Reps seek evidence on DM's effectiveness in retention phase to convince doctors about long-term treatment stability benefits.",
+      "count": 25
+    },
+    {
+      "title": "Engagement Tools to Boost Patient Compliance",
+      "desc": "Reps need clinical data on engagement features to help doctors improve patient compliance and treatment outcomes.",
+      "count": 20
+    },
+    {
+      "title": "Hygiene Monitoring and Oral Health Benefits",
+      "desc": "Reps require evidence that DM supports hygiene monitoring to address doctor concerns about oral health during orthodontic treatment.",
+      "count": 15
     }
   ]
 }
