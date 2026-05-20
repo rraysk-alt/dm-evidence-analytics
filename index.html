@@ -234,7 +234,6 @@ function renderNeeds(items) {
     var descHtml = item.desc ? '<div class="need-desc">' + item.desc + '</div>' : '';
     return '<div class="need-item"><div class="need-rank">' + (i + 1) + '</div><div class="need-content"><div class="need-title">' + (item.title || item.label || item.name) + '</div>' + descHtml + '</div><div class="need-badge">' + item.count + ' mentions</div></div>';
   }).join('');
-}).join('');
 }
 
 async function loadStats() {
