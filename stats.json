@@ -108,54 +108,54 @@
   ],
   "top_needs": [
     {
-      "title": "Clinical Evidence on Braces Treatment Effectiveness",
-      "desc": "Reps need to address doctor objections about braces treatment outcomes and demonstrate DM's value for traditional orthodontics.",
-      "count": 105
+      "title": "Braces treatment outcomes with remote monitoring",
+      "desc": "Doctors question if remote monitoring improves braces treatment effectiveness and patient outcomes",
+      "count": 110
     },
     {
-      "title": "Practice Workflow Integration with DentalMonitoring",
-      "desc": "Reps require evidence to show how DM improves practice workflow efficiency and reduces chair time, overcoming concerns about implementation complexity.",
+      "title": "AI scan accuracy rate versus manual clinical assessment",
+      "desc": "Orthodontists doubt if AI accuracy is sufficient to replace manual clinical checks",
+      "count": 90
+    },
+    {
+      "title": "Practice workflow improvements using DentalMonitoring platform",
+      "desc": "Clinicians are skeptical that DM integration streamlines orthodontic practice workflow",
       "count": 80
     },
     {
-      "title": "Practice Efficiency and Time Savings with DM",
-      "desc": "Reps need data proving DM enhances overall practice efficiency to convince doctors focused on operational improvements.",
+      "title": "Practice efficiency gains and time savings with DentalMonitoring",
+      "desc": "Doctors question whether DM reduces chair time and emergency visits effectively",
       "count": 70
     },
     {
-      "title": "Aligners Treatment Clinical Evidence and Benefits",
-      "desc": "Reps seek evidence supporting aligner treatment effectiveness and DM's role in monitoring aligner cases to address doctor skepticism.",
-      "count": 65
-    },
-    {
-      "title": "SmartSTL Technology Benefits and Accuracy",
-      "desc": "Reps need to demonstrate the accuracy and clinical advantages of SmartSTL scans to overcome doubts about digital impressions.",
+      "title": "Aligner treatment outcomes with versus without remote monitoring",
+      "desc": "Orthodontists need evidence that remote monitoring improves aligner treatment success",
       "count": 60
     },
     {
-      "title": "AI Accuracy and Reliability in Monitoring",
-      "desc": "Reps require strong evidence on AI accuracy to reassure doctors about DM's diagnostic reliability and reduce trust barriers.",
-      "count": 55
-    },
-    {
-      "title": "Patient Experience Improvements with DM",
-      "desc": "Reps need proof that DM enhances patient satisfaction and engagement to address concerns about patient acceptance.",
+      "title": "SmartSTL scan accuracy and clinical utility compared to traditional impressions",
+      "desc": "Clinicians doubt if SmartSTL scans can replace traditional impressions reliably",
       "count": 50
     },
     {
-      "title": "Retention Phase Monitoring and Management",
-      "desc": "Reps seek evidence on DM's effectiveness in retention phase to convince doctors about long-term treatment stability benefits.",
+      "title": "Patient experience and satisfaction with remote orthodontic monitoring",
+      "desc": "Doctors question if patients prefer and comply better with remote monitoring",
+      "count": 45
+    },
+    {
+      "title": "Retention phase outcomes with remote monitoring support",
+      "desc": "Orthodontists need proof that DM improves retention compliance and relapse prevention",
       "count": 25
     },
     {
-      "title": "Engagement Tools to Boost Patient Compliance",
-      "desc": "Reps need clinical data on engagement features to help doctors improve patient compliance and treatment outcomes.",
-      "count": 20
+      "title": "Phase 1 orthodontic treatment effectiveness with remote monitoring",
+      "desc": "Clinicians are unsure if early phase treatments benefit from DM monitoring",
+      "count": 15
     },
     {
-      "title": "Hygiene Monitoring and Oral Health Benefits",
-      "desc": "Reps require evidence that DM supports hygiene monitoring to address doctor concerns about oral health during orthodontic treatment.",
-      "count": 15
+      "title": "Hygiene monitoring impact on oral health during orthodontic treatment",
+      "desc": "Doctors doubt if DM hygiene tracking improves patient oral hygiene outcomes",
+      "count": 10
     }
   ]
 }
