@@ -251,6 +251,7 @@ async function loadStats() {
     renderBarList('top-topics', data.top_topics || []);
     renderChart(data.monthly   || []);
     renderMAU(data.monthly     || []);
+    renderNeeds(data.top_needs || []);
  
   } catch (e) {
     document.getElementById('updated-date').textContent = 'Error loading data';
