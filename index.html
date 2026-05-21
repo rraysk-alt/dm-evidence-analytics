@@ -9,25 +9,25 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f1f5f9; color: #0f172a; padding: 32px 16px; }
   .container { max-width: 960px; margin: 0 auto; }
- 
+
   .header { background: #00a3ad; border-radius: 12px; padding: 28px 32px; margin-bottom: 28px; display: flex; justify-content: space-between; align-items: center; }
   .header h1 { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
   .header p { font-size: 12px; color: rgba(255,255,255,0.8); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.1em; }
   .header-right { text-align: right; }
   .updated-badge { font-size: 11px; color: rgba(255,255,255,0.7); }
   .updated-date { font-size: 14px; font-weight: 700; color: #fff; margin-top: 2px; }
- 
+
   .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 28px; }
   .kpi-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px 24px; }
   .kpi-label { font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
   .kpi-value { font-size: 32px; font-weight: 800; color: #00a3ad; line-height: 1; }
   .kpi-sub { font-size: 12px; color: #64748b; margin-top: 4px; }
- 
+
   .section { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; }
   .section-title { font-size: 14px; font-weight: 700; color: #0f172a; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; }
   .chart-wrap { position: relative; height: 260px; }
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px; }
- 
+
   .bar-list { list-style: none; }
   .bar-item { margin-bottom: 14px; }
   .bar-meta { display: flex; justify-content: space-between; margin-bottom: 4px; }
@@ -35,27 +35,66 @@
   .bar-count { font-size: 13px; font-weight: 700; color: #00a3ad; }
   .bar-track { background: #f1f5f9; border-radius: 99px; height: 8px; }
   .bar-fill { background: #00a3ad; border-radius: 99px; height: 8px; }
- 
+
   .mau-table { width: 100%; border-collapse: collapse; }
   .mau-table th { font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.08em; padding: 8px 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
   .mau-table td { font-size: 13px; padding: 10px 12px; border-bottom: 1px solid #f1f5f9; }
   .mau-table tr:last-child td { border-bottom: none; }
   .num { font-weight: 700; color: #00a3ad; }
- 
-  .need-item { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid #f1f5f9; }
-  .need-item:last-child { border-bottom: none; }
-  .need-rank { flex-shrink: 0; width: 28px; height: 28px; background: #e6f7f8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; color: #00a3ad; }
-  .need-content .need-title { font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 3px; }
-  .need-content .need-desc { font-size: 13px; color: #64748b; line-height: 1.5; }
-  .need-badge { flex-shrink: 0; font-size: 11px; font-weight: 700; background: #dbeafe; color: #1d4ed8; padding: 3px 10px; border-radius: 20px; white-space: nowrap; margin-top: 3px; }
- 
+
+  /* ── Top 10 Needs — expanded card design ── */
+  .need-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; margin-bottom: 16px; overflow: hidden; transition: box-shadow 0.2s; }
+  .need-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+  .need-header { display: flex; align-items: flex-start; gap: 14px; padding: 18px 22px; cursor: pointer; user-select: none; }
+  .need-header:hover { background: #f8fafc; }
+  .need-rank { flex-shrink: 0; width: 32px; height: 32px; background: #e6f7f8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; color: #00a3ad; }
+  .need-title-wrap { flex: 1; min-width: 0; }
+  .need-title { font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.4; }
+  .need-subtitle { font-size: 12px; color: #64748b; margin-top: 3px; }
+  .need-badge { flex-shrink: 0; font-size: 11px; font-weight: 700; background: #dbeafe; color: #1d4ed8; padding: 4px 12px; border-radius: 20px; white-space: nowrap; }
+  .need-chevron { flex-shrink: 0; width: 20px; height: 20px; color: #94a3b8; transition: transform 0.2s; margin-top: 4px; }
+  .need-card.open .need-chevron { transform: rotate(180deg); }
+
+  .need-body { display: none; padding: 0 22px 22px 68px; }
+  .need-card.open .need-body { display: block; }
+
+  .need-field { margin-bottom: 16px; }
+  .need-field:last-child { margin-bottom: 0; }
+  .need-field-label { font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 5px; display: flex; align-items: center; gap: 6px; }
+  .need-field-label .nf-icon { font-size: 13px; }
+  .need-field-value { font-size: 13px; color: #334155; line-height: 1.6; }
+
+  .need-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .need-tag { background: #f1f5f9; color: #475569; border-radius: 6px; padding: 3px 10px; font-size: 11px; font-weight: 600; }
+  .need-tag.t-brand { background: #ede9fe; color: #6d28d9; }
+  .need-tag.t-metric { background: #e0f2fe; color: #0369a1; }
+  .need-tag.t-evidence { background: #dcfce7; color: #15803d; }
+
+  .need-quote { background: #f8fafc; border-left: 3px solid #00a3ad; padding: 8px 14px; margin-bottom: 6px; font-size: 12px; color: #475569; font-style: italic; border-radius: 0 6px 6px 0; }
+
+  .need-gap { background: #fef3c7; border: 1px solid #fde68a; border-radius: 8px; padding: 12px 16px; }
+  .need-gap-label { font-size: 10px; font-weight: 700; color: #92400e; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+  .need-gap-text { font-size: 13px; color: #78350f; line-height: 1.5; }
+
+  .need-objection { background: #fff1f2; border: 1px solid #fecdd3; border-radius: 8px; padding: 12px 16px; }
+  .need-objection-text { font-size: 13px; color: #9f1239; line-height: 1.6; }
+
+  .expand-all-btn { display: inline-flex; align-items: center; gap: 6px; background: none; border: 1px solid #e2e8f0; border-radius: 8px; padding: 6px 14px; font-size: 12px; font-weight: 600; color: #64748b; cursor: pointer; margin-bottom: 16px; font-family: inherit; }
+  .expand-all-btn:hover { background: #f8fafc; color: #0f172a; }
+
   .loading { text-align: center; padding: 40px; color: #94a3b8; font-size: 14px; }
   .footer { text-align: center; font-size: 11px; color: #94a3b8; margin-top: 32px; letter-spacing: 0.04em; }
+
+  @media (max-width: 700px) {
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .two-col { grid-template-columns: 1fr; }
+    .need-body { padding-left: 22px; }
+  }
 </style>
 </head>
 <body>
 <div class="container">
- 
+
   <div class="header">
     <div>
       <h1>DentalMonitoring — Evidence Query Workflow</h1>
@@ -66,7 +105,7 @@
       <div class="updated-date" id="updated-date">Loading…</div>
     </div>
   </div>
- 
+
   <div class="kpi-grid">
     <div class="kpi-card">
       <div class="kpi-label">Total Requests</div>
@@ -89,14 +128,14 @@
       <div class="kpi-sub" id="kpi-peak-sub">—</div>
     </div>
   </div>
- 
+
   <div class="section">
     <div class="section-title">📈 Usage Evolution — Requests & Active Users by Month</div>
     <div class="chart-wrap">
       <canvas id="usageChart"></canvas>
     </div>
   </div>
- 
+
   <div class="two-col">
     <div class="section" style="margin-bottom:0;">
       <div class="section-title">👤 Top 5 Users</div>
@@ -107,7 +146,7 @@
       <ul class="bar-list" id="top-topics"><li class="loading">Loading…</li></ul>
     </div>
   </div>
- 
+
   <div class="section" style="margin-top:24px;">
     <div class="section-title">📅 Monthly Active Users & Request Volume</div>
     <table class="mau-table">
@@ -122,25 +161,30 @@
       <tbody id="mau-tbody"><tr><td colspan="4" class="loading">Loading…</td></tr></tbody>
     </table>
   </div>
- 
+
   <div class="section">
-    <div class="section-title">💡 Top 10 Needs — By Topic Frequency</div>
+    <div class="section-title">💡 Top 10 Evidence Needs — Detailed Briefs</div>
+    <button class="expand-all-btn" id="expand-all-btn" onclick="toggleAllNeeds()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+      Expand all
+    </button>
     <div id="top-needs"><div class="loading">Loading…</div></div>
   </div>
- 
+
   <div class="footer">DentalMonitoring · Evidence Query Workflow Analysis · Auto-updated weekly via n8n</div>
 </div>
- 
+
 <script>
 const STATS_URL = 'https://raw.githubusercontent.com/rraysk-alt/dm-evidence-analytics/main/stats.json';
 let usageChart = null;
- 
+let allNeedsExpanded = false;
+
 function fmtMonth(m) {
   const [y, mo] = m.split('-');
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   return `${months[parseInt(mo)-1]} ${y.slice(2)}`;
 }
- 
+
 function renderBarList(id, items) {
   const max = items[0]?.count || 1;
   document.getElementById(id).innerHTML = items.map(item => `
@@ -155,12 +199,12 @@ function renderBarList(id, items) {
     </li>
   `).join('');
 }
- 
+
 function renderChart(monthly) {
   const labels   = monthly.map(m => fmtMonth(m.month));
   const requests = monthly.map(m => m.requests);
   const users    = monthly.map(m => m.users);
- 
+
   if (usageChart) usageChart.destroy();
   usageChart = new Chart(document.getElementById('usageChart').getContext('2d'), {
     type: 'bar',
@@ -204,17 +248,17 @@ function renderChart(monthly) {
     }
   });
 }
- 
+
 function renderMAU(monthly) {
   const rows = [...monthly].reverse().map((m, i, arr) => {
     const prev = arr[i + 1];
     let trend = '';
     if (!prev) {
-      trend = '<span style="color:#7c3aed;font-size:12px;font-weight:600;">▶ First</span>';
+      trend = '<span style="color:#7c3aed;font-size:12px;font-weight:600;">&#9654; First</span>';
     } else {
       const pct = Math.round(((m.requests - prev.requests) / prev.requests) * 100);
       const color = pct >= 0 ? '#16a34a' : '#dc2626';
-      const arrow = pct >= 0 ? '▲' : '▼';
+      const arrow = pct >= 0 ? '&#9650;' : '&#9660;';
       trend = `<span style="color:${color};font-size:12px;font-weight:600;">${arrow} ${pct > 0 ? '+' : ''}${pct}%</span>`;
     }
     const avg = m.users ? Math.round((m.requests / m.users) * 10) / 10 : '—';
@@ -228,38 +272,156 @@ function renderMAU(monthly) {
   });
   document.getElementById('mau-tbody').innerHTML = rows.join('');
 }
- 
+
+function escHtml(s) {
+  if (!s) return '';
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function toggleNeed(idx) {
+  var card = document.getElementById('need-card-' + idx);
+  if (card) card.classList.toggle('open');
+}
+
+function toggleAllNeeds() {
+  allNeedsExpanded = !allNeedsExpanded;
+  var cards = document.querySelectorAll('.need-card');
+  cards.forEach(function(c) {
+    if (allNeedsExpanded) c.classList.add('open');
+    else c.classList.remove('open');
+  });
+  var btn = document.getElementById('expand-all-btn');
+  if (btn) btn.innerHTML = allNeedsExpanded
+    ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg> Collapse all'
+    : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg> Expand all';
+}
+
 function renderNeeds(items) {
-  document.getElementById('top-needs').innerHTML = items.map(function(item, i) {
-    var descHtml = item.desc ? '<div class="need-desc">' + item.desc + '</div>' : '';
-    return '<div class="need-item"><div class="need-rank">' + (i + 1) + '</div><div class="need-content"><div class="need-title">' + (item.title || item.label || item.name) + '</div>' + descHtml + '</div><div class="need-badge">' + item.count + ' mentions</div></div>';
+  if (!items || !items.length) {
+    document.getElementById('top-needs').innerHTML = '<div class="loading">No needs data available.</div>';
+    return;
+  }
+
+  // Detect if new detailed format (has brands_and_products) or old format (just title/desc/count)
+  var isDetailed = items[0].brands_and_products || items[0].metrics_sought || items[0].doctor_objections;
+
+  var html = items.map(function(item, i) {
+    var chevronSvg = '<svg class="need-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>';
+
+    // Header (always visible)
+    var header = '<div class="need-header" onclick="toggleNeed(' + i + ')">'
+      + '<div class="need-rank">' + (i + 1) + '</div>'
+      + '<div class="need-title-wrap">'
+      + '<div class="need-title">' + escHtml(item.title || item.label || item.name) + '</div>'
+      + (item.desc && !isDetailed ? '<div class="need-subtitle">' + escHtml(item.desc) + '</div>' : '')
+      + '</div>'
+      + '<div class="need-badge">' + item.count + ' mentions</div>'
+      + chevronSvg
+      + '</div>';
+
+    // Body (expandable) — only for detailed format
+    var body = '';
+    if (isDetailed) {
+      body = '<div class="need-body">';
+
+      // Brands & Products
+      if (item.brands_and_products) {
+        var brands = item.brands_and_products.split(/,\s*/).map(function(b) {
+          return '<span class="need-tag t-brand">' + escHtml(b.trim()) + '</span>';
+        }).join('');
+        body += '<div class="need-field">'
+          + '<div class="need-field-label"><span class="nf-icon">🏷️</span> Brands & Products</div>'
+          + '<div class="need-tags">' + brands + '</div>'
+          + '</div>';
+      }
+
+      // Metrics Sought
+      if (item.metrics_sought) {
+        var metrics = item.metrics_sought.split(/,\s*/).map(function(m) {
+          return '<span class="need-tag t-metric">' + escHtml(m.trim()) + '</span>';
+        }).join('');
+        body += '<div class="need-field">'
+          + '<div class="need-field-label"><span class="nf-icon">📊</span> Metrics Sought</div>'
+          + '<div class="need-tags">' + metrics + '</div>'
+          + '</div>';
+      }
+
+      // Doctor Objections
+      if (item.doctor_objections) {
+        body += '<div class="need-field">'
+          + '<div class="need-field-label"><span class="nf-icon">🩺</span> Doctor Objections</div>'
+          + '<div class="need-objection"><div class="need-objection-text">' + escHtml(item.doctor_objections) + '</div></div>'
+          + '</div>';
+      }
+
+      // Evidence Type Needed
+      if (item.evidence_type_needed) {
+        var types = item.evidence_type_needed.split(/,\s*/).map(function(t) {
+          return '<span class="need-tag t-evidence">' + escHtml(t.trim()) + '</span>';
+        }).join('');
+        body += '<div class="need-field">'
+          + '<div class="need-field-label"><span class="nf-icon">📄</span> Evidence Type Needed</div>'
+          + '<div class="need-tags">' + types + '</div>'
+          + '</div>';
+      }
+
+      // Sample Queries
+      if (item.sample_queries && item.sample_queries.length) {
+        var quotes = item.sample_queries.map(function(q) {
+          return '<div class="need-quote">"' + escHtml(q) + '"</div>';
+        }).join('');
+        body += '<div class="need-field">'
+          + '<div class="need-field-label"><span class="nf-icon">💬</span> Sample Queries from Reps</div>'
+          + quotes
+          + '</div>';
+      }
+
+      // Gap Assessment
+      if (item.gap_assessment) {
+        body += '<div class="need-field">'
+          + '<div class="need-gap">'
+          + '<div class="need-gap-label">⚠️ Gap Assessment — Priority to Create</div>'
+          + '<div class="need-gap-text">' + escHtml(item.gap_assessment) + '</div>'
+          + '</div>'
+          + '</div>';
+      }
+
+      body += '</div>';
+    } else if (item.desc) {
+      // Old format fallback — just show desc in body
+      body = '<div class="need-body"><div class="need-field"><div class="need-field-value">' + escHtml(item.desc) + '</div></div></div>';
+    }
+
+    return '<div class="need-card" id="need-card-' + i + '">' + header + body + '</div>';
   }).join('');
+
+  document.getElementById('top-needs').innerHTML = html;
 }
 
 async function loadStats() {
   try {
     const res  = await fetch(STATS_URL + '?t=' + Date.now());
     const data = await res.json();
- 
+
     document.getElementById('updated-date').textContent = data.updated || '—';
     document.getElementById('kpi-total').textContent    = data.total_requests?.toLocaleString() || '—';
     document.getElementById('kpi-users').textContent    = data.unique_users?.toLocaleString() || '—';
     document.getElementById('kpi-avg').textContent      = data.avg_req_per_user || '—';
     document.getElementById('kpi-peak').textContent     = data.peak_month ? fmtMonth(data.peak_month) : '—';
     document.getElementById('kpi-peak-sub').textContent = data.peak_requests ? `${data.peak_requests} requests` : '—';
- 
+
     renderBarList('top-users',  data.top_users  || []);
     renderBarList('top-topics', data.top_topics || []);
     renderChart(data.monthly   || []);
     renderMAU(data.monthly     || []);
     renderNeeds(data.top_needs || []);
- 
+
   } catch (e) {
     document.getElementById('updated-date').textContent = 'Error loading data';
     console.error('Failed to load stats.json:', e);
   }
 }
- 
+
 loadStats();
 </script>
 </body>
