@@ -108,154 +108,154 @@
   ],
   "top_needs": [
     {
-      "title": "Braces treatment outcomes and efficiency improvements with DM monitoring",
-      "count": 110,
-      "brands_and_products": "No specific brands — general orthodontic appliances",
-      "metrics_sought": "treatment duration in months, emergency visit frequency, percentage of on-track cases, patient compliance rate, chair time per appointment",
-      "doctor_objections": "Orthodontists often believe traditional in-office braces monitoring is sufficient and doubt that remote monitoring can reduce treatment time or emergencies. They worry DM might add complexity without clear efficiency gains or improved patient outcomes.",
-      "evidence_type_needed": "peer-reviewed retrospective cohort studies comparing treatment duration and emergency rates, case series demonstrating compliance improvements, expert opinion/KOL testimonials on workflow impact",
+      "title": "Reduction in treatment duration and appointment frequency with DM vs standard care",
+      "count": 65,
+      "brands_and_products": "Invisalign, Spark, Angel, Damon braces, Damon Ultima, self-ligating brackets, SmartSTL, DM ScanBox",
+      "metrics_sought": "treatment duration in months, number of visits reduction, chair time minutes saved per appointment, percentage of cases with reduced refinements",
+      "doctor_objections": "Orthodontists question whether remote monitoring truly shortens treatment or just shifts workload. Some believe frequent in-person visits are essential and doubt DM can reduce appointment frequency without compromising care. Others are skeptical about claims of fewer refinements or faster aligner progression.",
+      "evidence_type_needed": "peer-reviewed RCTs comparing treatment duration with and without DM, retrospective cohort studies on appointment frequency, before/after case galleries showing time savings",
       "sample_queries": [
-        "Braces",
-        "Braces",
-        "Braces",
-        "Braces"
+        "Impact on treatment duration",
+        "Clinical studies and evidence on the reduction on visits with DM for Braces treatments.",
+        "Evidence that DM reduces number of visits for braces cases",
+        "Reduced chairtime and academic publication"
       ],
-      "gap_assessment": "There is a lack of robust comparative studies quantifying how DM remote monitoring specifically shortens braces treatment time and reduces emergency visits. Prioritize creating controlled cohort studies with clear efficiency and outcome metrics."
+      "gap_assessment": "High-quality comparative studies quantifying treatment time and visit reductions with DM, especially for braces, are scarce. Prioritize creating robust RCTs and real-world data analyses demonstrating these time savings."
     },
     {
-      "title": "Practice workflow optimization and efficiency gains using DM remote monitoring",
-      "count": 70,
-      "brands_and_products": "No specific brands — general orthodontic appliances",
-      "metrics_sought": "chair time saved per appointment, number of appointments reduced per patient, staff time saved, patient no-show rate, overall practice throughput",
-      "doctor_objections": "Doctors question whether DM actually reduces chair time or appointment frequency, fearing it may increase workload reviewing scans. Some doubt if DM integrates smoothly into existing workflows without disruption.",
-      "evidence_type_needed": "white papers with practice data on time savings, ROI calculators, workflow case studies, peer-reviewed observational studies on appointment frequency changes",
+      "title": "Accuracy and reliability of DM AI tooth movement detection vs clinical assessment",
+      "count": 60,
+      "brands_and_products": "DM AI, SmartSTL, Invisalign, Spark, Damon braces",
+      "metrics_sought": "AI sensitivity and specificity percentages, mean bias in mm for occlusal parameters, accuracy rates compared to in-person exams, FDA clearance data",
+      "doctor_objections": "Doctors doubt AI's ability to detect subtle clinical changes remotely and worry about false positives/negatives. Some patients question AI findings, leading to skepticism about DM's diagnostic reliability.",
+      "evidence_type_needed": "product accuracy validation studies, peer-reviewed clinical validation papers, regulatory clearance documentation, sensitivity/specificity analyses",
       "sample_queries": [
-        "Practice workflow with DM",
-        "Practice workflow with DM",
-        "Practice workflow with DM",
-        "Practice workflow with DM"
+        "Information on the accuracy of DM, a patient has questioned the ability of the AI to detect clinical observations",
+        "paper on AI accuracy",
+        "Specificity and sensitivity results for FDA application",
+        "Occlusal Assessment: A quantitative study validating the AI’s accuracy in detecting malocclusions"
       ],
-      "gap_assessment": "Missing are detailed practice-level data and ROI analyses showing concrete time and cost savings from DM integration. Developing practice workflow case studies and ROI tools would address this gap."
+      "gap_assessment": "More accessible, detailed validation studies with clear accuracy metrics and clinical comparisons are needed to reassure skeptical doctors and patients."
     },
     {
-      "title": "DM AI tooth movement detection accuracy versus in-person clinical assessment",
+      "title": "Practice workflow improvements and staff efficiency gains integrating DM",
       "count": 55,
-      "brands_and_products": "No specific brands — general orthodontic appliances",
-      "metrics_sought": "AI detection accuracy percentage, sensitivity and specificity rates, false positive/negative rates, agreement rate with clinician assessments",
-      "doctor_objections": "Clinicians doubt AI can match their diagnostic accuracy and worry about false alerts or missed issues. They question if AI can reliably replace or supplement their clinical judgment.",
-      "evidence_type_needed": "product accuracy validation studies, peer-reviewed diagnostic accuracy studies, regulatory clearance documentation, expert KOL testimonials",
+      "brands_and_products": "DM platform, DM ScanBox, Damon braces, SmartSTL",
+      "metrics_sought": "staff time saved per week, appointment scheduling efficiency, patient no-show rate changes, staff satisfaction scores",
+      "doctor_objections": "Doctors worry DM integration complicates workflows or adds staff burden. Some fear it disrupts existing scheduling or requires extra training without clear efficiency gains.",
+      "evidence_type_needed": "white papers with practice data, case studies on workflow integration, staff satisfaction surveys, ROI calculators",
       "sample_queries": [
-        "AI accuracy",
-        "AI accuracy",
-        "AI accuracy",
-        "AI accuracy"
+        "Understanding of how our practice can benefit from DM",
+        "Explain to that prospect what integrating DM means concretely for them and their team",
+        "EMEA Doctors, effecting staff efficiency",
+        "How can I make DM work in a practice with 8 chairs and 15 assistants in a way that they really get the real benefits"
       ],
-      "gap_assessment": "There is a need for more published validation studies comparing DM AI accuracy directly to clinician assessments in real-world settings. Prioritize rigorous diagnostic accuracy research and regulatory evidence."
+      "gap_assessment": "Detailed, region-specific workflow case studies and ROI analyses demonstrating concrete staff time savings and satisfaction improvements are missing and should be prioritized."
     },
     {
-      "title": "Clinical outcomes and patient satisfaction with aligner treatment monitored by DM",
-      "count": 45,
-      "brands_and_products": "Invisalign, Spark, other clear aligners",
-      "metrics_sought": "treatment duration, patient compliance rates, patient satisfaction scores, number of refinements needed, percentage of on-track cases",
-      "doctor_objections": "Doctors question if DM monitoring improves aligner compliance or reduces treatment time compared to standard recall visits. Some doubt patient satisfaction gains are significant.",
-      "evidence_type_needed": "RCTs or cohort studies comparing DM-monitored vs standard aligner treatment, patient satisfaction surveys, before/after case galleries",
+      "title": "Return on investment (ROI) and financial benefits of DM for braces and aligners",
+      "count": 50,
+      "brands_and_products": "Damon braces, Invisalign, Spark, Angel, self-ligating brackets",
+      "metrics_sought": "cost savings per patient, increased patient throughput, revenue impact, appointment reduction translating to financial gains",
+      "doctor_objections": "Doctors question whether DM just adds costs without clear financial return. Some doubt if reduced visits or chair time translate into real profit or just shift workload.",
+      "evidence_type_needed": "ROI calculators, retrospective financial analyses, white papers with practice revenue data, case studies showing profitability improvements",
       "sample_queries": [
-        "Aligners",
-        "Aligners",
-        "Aligners",
-        "Aligners"
+        "Roi proof on braces",
+        "ROI Braces",
+        "Show how can doctors increases the profitability if their practices using DM",
+        "I need a clear ROI"
       ],
-      "gap_assessment": "Limited RCTs exist showing DM’s impact on aligner treatment efficiency and patient satisfaction. Creating controlled comparative studies and patient-reported outcome data is a priority."
-    },
-    {
-      "title": "SmartSTL digital impression accuracy and clinical utility compared to traditional impressions",
-      "count": 40,
-      "brands_and_products": "SmartSTL",
-      "metrics_sought": "impression accuracy rates, time to capture impressions, patient comfort scores, reduction in retakes, integration with treatment planning",
-      "doctor_objections": "Clinicians are skeptical if SmartSTL scans match the accuracy of traditional impressions and whether it truly saves chair time or improves patient comfort.",
-      "evidence_type_needed": "validation studies comparing SmartSTL to traditional impressions, case series demonstrating clinical workflow integration, patient comfort surveys",
-      "sample_queries": [
-        "SmartSTL",
-        "SmartSTL",
-        "SmartSTL",
-        "SmartSTL"
-      ],
-      "gap_assessment": "There is a shortage of head-to-head accuracy and workflow studies for SmartSTL versus traditional impressions. Prioritize clinical validation and patient experience research."
-    },
-    {
-      "title": "Retention phase monitoring effectiveness and relapse prevention with DM",
-      "count": 30,
-      "brands_and_products": "No specific brands — general orthodontic appliances",
-      "metrics_sought": "relapse rates, retention compliance rates, frequency of retention adjustments, patient satisfaction during retention",
-      "doctor_objections": "Orthodontists doubt if remote monitoring during retention reduces relapse or improves compliance compared to standard recall visits. Some see retention as low priority for remote monitoring.",
-      "evidence_type_needed": "retrospective cohort studies on relapse rates with DM, patient compliance surveys, expert opinion articles on retention monitoring",
-      "sample_queries": [
-        "Retention",
-        "Retention",
-        "Retention",
-        "Retention"
-      ],
-      "gap_assessment": "Evidence on DM’s impact on retention compliance and relapse prevention is sparse. Developing longitudinal studies focused on retention phase outcomes is needed."
+      "gap_assessment": "Comprehensive ROI models and financial case studies tailored to different practice sizes and regions are lacking and would help overcome cost objections."
     },
     {
       "title": "Patient experience and satisfaction improvements using DM remote monitoring",
-      "count": 28,
-      "brands_and_products": "No specific brands — general orthodontic appliances",
-      "metrics_sought": "patient satisfaction scores, perceived convenience, anxiety reduction, engagement rates, no-show rates",
-      "doctor_objections": "Doctors question if patients truly prefer remote monitoring or if it adds complexity. Some doubt it improves patient engagement or reduces no-shows.",
-      "evidence_type_needed": "patient satisfaction surveys, qualitative studies on patient experience, case studies highlighting engagement improvements",
+      "count": 45,
+      "brands_and_products": "DM platform, Damon braces, Invisalign, Spark, Engage",
+      "metrics_sought": "patient compliance rates, app usage time, patient satisfaction scores, patient engagement metrics",
+      "doctor_objections": "Some doctors doubt patients will adopt or like remote monitoring apps. They question if DM improves compliance or just adds complexity for patients.",
+      "evidence_type_needed": "academic publications on patient experience, patient satisfaction surveys, case series with patient feedback, KOL testimonials",
       "sample_queries": [
-        "Patient experience",
-        "Patient experience",
-        "Patient experience",
-        "Patient experience"
+        "Academic publications on patient experience",
+        "Is there any evidence on how much patients like DentalMonitoring",
+        "Patient experience and satisfaction from DM use",
+        "patient engagement"
       ],
-      "gap_assessment": "More patient-centered research quantifying satisfaction and engagement benefits of DM is needed. Prioritize patient survey data and qualitative feedback studies."
+      "gap_assessment": "More published patient-centered studies and satisfaction data, especially from diverse geographic regions, are needed to convince skeptical doctors."
     },
     {
-      "title": "Engage app impact on patient compliance and treatment outcomes",
+      "title": "Effectiveness and clinical benefits of DM monitoring for fixed braces treatments",
+      "count": 40,
+      "brands_and_products": "Damon braces, self-ligating brackets, twin brackets, traditional fixed braces",
+      "metrics_sought": "appointment reduction, treatment efficiency, archwire passivity detection accuracy, debond rates",
+      "doctor_objections": "Orthodontists question if DM adds value for fixed braces or if traditional monitoring suffices. Some doubt AI can detect archwire passivity or bracket issues remotely.",
+      "evidence_type_needed": "clinical studies on fixed braces monitoring, academic publications on archwire passivity detection, case series on bracket failure rates",
+      "sample_queries": [
+        "I want to see the impact of DM for braces treatment",
+        "How does DM know when an archwire is passive?",
+        "Benefits of monitoring selfligating braces",
+        "Fixed braces efficiency"
+      ],
+      "gap_assessment": "Robust clinical evidence specifically focused on fixed braces monitoring benefits and AI capabilities in this area is limited and should be developed."
+    },
+    {
+      "title": "Accuracy and clinical utility of SmartSTL 3D monitoring compared to intraoral scans",
+      "count": 35,
+      "brands_and_products": "SmartSTL, iTero, DM ScanBox",
+      "metrics_sought": "dimensional accuracy in mm, reliability for refinement planning, comparison with intraoral scanner data",
+      "doctor_objections": "Doctors are unsure if SmartSTL can replace or complement traditional intraoral scans. Some question its accuracy and clinical usefulness for treatment planning.",
+      "evidence_type_needed": "scientific validation studies, white papers comparing SmartSTL to intraoral scans, clinical case reports",
+      "sample_queries": [
+        "SmartSTL accuracy academic publications",
+        "Is Smart STL like an intraoralscan?",
+        "Accuracy of Smart STL for refinement",
+        "Looking for white papers on Smart STL accuracy"
+      ],
+      "gap_assessment": "More head-to-head comparative studies and clinical validation data on SmartSTL accuracy and utility are needed to support adoption."
+    },
+    {
+      "title": "Reduction in chair time and practice efficiency gains with DM remote monitoring",
+      "count": 33,
+      "brands_and_products": "Damon braces, Invisalign, Spark, DM platform",
+      "metrics_sought": "minutes saved per appointment, total chair time reduction per case, staff time savings, patient throughput increase",
+      "doctor_objections": "Doctors doubt if DM truly reduces chair time or just shifts tasks to remote review. Some are skeptical about efficiency gains translating into real practice benefits.",
+      "evidence_type_needed": "retrospective cohort studies, practice efficiency white papers, time-motion studies, ROI analyses",
+      "sample_queries": [
+        "How much chair time reduction achieved",
+        "Reduce chairtime in braces",
+        "Time saving in chair",
+        "Reduced chairtime and academic publication"
+      ],
+      "gap_assessment": "Quantitative time savings data from diverse practice settings are limited; creating detailed time-motion and efficiency studies would be valuable."
+    },
+    {
+      "title": "Clinical evidence supporting DM use for retention monitoring and relapse prevention",
+      "count": 25,
+      "brands_and_products": "DM retention module, fixed and removable retainers",
+      "metrics_sought": "percentage of retention lapses detected, relapse rates, patient compliance with retention protocols, revenue from retention monitoring",
+      "doctor_objections": "Doctors question if remote retention monitoring adds value or if traditional recall visits suffice. Some doubt if DM can improve compliance or detect relapse early.",
+      "evidence_type_needed": "clinical studies on retention monitoring, case series on relapse prevention, ROI analyses for retention services",
+      "sample_queries": [
+        "Help me convince a Dr that monitoring retention brings value to their practice",
+        "Is DM efficient for retention?",
+        "percentage lapse in retention",
+        "retention optimisation"
+      ],
+      "gap_assessment": "More clinical data quantifying retention monitoring benefits and financial impact for small practices are needed to support sales efforts."
+    },
+    {
+      "title": "Clinical and marketing evidence for Engage patient acquisition and retention tool",
       "count": 20,
-      "brands_and_products": "Engage app",
-      "metrics_sought": "patient compliance rates, treatment adherence, app usage statistics, treatment outcome improvements",
-      "doctor_objections": "Clinicians doubt if the Engage app meaningfully improves compliance or if patients consistently use it. Some see it as a gimmick without clinical benefit.",
-      "evidence_type_needed": "usage analytics reports, cohort studies linking app use to compliance, expert testimonials",
+      "brands_and_products": "Engage by DentalMonitoring",
+      "metrics_sought": "new patient acquisition rates, patient engagement metrics, clinical acceptance, patient perception",
+      "doctor_objections": "Doctors are unsure if Engage effectively attracts new patients or improves retention. Some want proof of clinical and marketing impact before adopting.",
+      "evidence_type_needed": "success stories, academic publications on Engage, marketing case studies, KOL testimonials",
       "sample_queries": [
-        "Engage",
-        "Engage",
-        "Engage",
-        "Engage"
+        "I want to know how Engage is improving patient's acquisition",
+        "Engage description",
+        "success story using Engage",
+        "Je souhaiterais des études prouvant l'intérêt clinique et la perception des patients"
       ],
-      "gap_assessment": "There is limited published data correlating Engage app usage with improved compliance and outcomes. Prioritize analytics and clinical correlation studies."
-    },
-    {
-      "title": "Hygiene monitoring and oral health outcomes with DM remote check-ins",
-      "count": 18,
-      "brands_and_products": "No specific brands — general orthodontic appliances",
-      "metrics_sought": "oral hygiene scores, incidence of gingivitis or caries, patient compliance with hygiene instructions",
-      "doctor_objections": "Doctors question if remote monitoring can effectively track hygiene or improve oral health compared to in-office checks. Some doubt patient adherence to hygiene advice remotely.",
-      "evidence_type_needed": "clinical observational studies on hygiene outcomes, patient compliance surveys, expert opinion articles",
-      "sample_queries": [
-        "Hygiene",
-        "Hygiene",
-        "Hygiene",
-        "Hygiene"
-      ],
-      "gap_assessment": "Few studies document hygiene improvements attributable to DM monitoring. Developing clinical outcome studies focused on oral health metrics is needed."
-    },
-    {
-      "title": "Phase 1 orthodontic treatment monitoring effectiveness with DM",
-      "count": 14,
-      "brands_and_products": "No specific brands — general orthodontic appliances",
-      "metrics_sought": "treatment progress tracking accuracy, treatment duration, patient compliance, early intervention rates",
-      "doctor_objections": "Orthodontists are unsure if DM adds value in Phase 1 treatment, which often requires frequent in-person adjustments. They question if remote monitoring can detect issues early enough.",
-      "evidence_type_needed": "case series on Phase 1 treatment with DM, expert opinion articles, observational studies on early intervention rates",
-      "sample_queries": [
-        "Phase 1",
-        "Phase 1",
-        "Phase 1",
-        "Phase 1"
-      ],
-      "gap_assessment": "There is a lack of focused evidence on DM’s role in Phase 1 treatment monitoring. Prioritize case studies and expert consensus on early treatment phases."
+      "gap_assessment": "More published clinical and marketing evidence demonstrating Engage’s impact on patient acquisition and retention would help overcome skepticism."
     }
   ]
 }
