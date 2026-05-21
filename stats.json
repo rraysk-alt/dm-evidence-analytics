@@ -1,7 +1,7 @@
 {
   "updated": "2026-05-21",
-  "total_requests": 365,
-  "unique_users": 188,
+  "total_requests": 366,
+  "unique_users": 189,
   "avg_req_per_user": 1.9,
   "peak_month": "2025-08",
   "peak_requests": 80,
@@ -102,18 +102,18 @@
     },
     {
       "month": "2026-05",
-      "requests": 20,
-      "users": 17
+      "requests": 21,
+      "users": 18
     }
   ],
   "top_needs": [
     {
-      "title": "Practice efficiency gains and ROI with DM-monitored braces or aligners versus standard recall",
+      "title": "Practice efficiency gains and ROI with DM-monitored braces and aligners versus standard recall",
       "count": 108,
-      "brands_and_products": "Damon, ormco, Spark, Angel, Invisalign, clearcorrect, suresmile, KLOwen, Lightforce, SmartSTL, Aliwell, Virtualcare, NHS",
-      "metrics_sought": "chair time reduction, appointment frequency, ROI, profitability, time saving, visit reduction, ongoing monitoring costs vs benefits, staff efficiency, diary changes, rentability, adaptive aligner change, average visit reduction",
-      "doctor_objections": "Doctors are skeptical that DM will actually save them time or money, reduce appointments, or improve practice profitability. They want to see hard data that these workflow and financial benefits are real and not just marketing claims.",
-      "evidence_type_needed": "academic publication, case study, white paper, No format preference specified — reps asked for any available evidence",
+      "brands_and_products": "Damon, Ormco, Spark, KLOwen, Lightforce, Angel, suresmile, clearcorrect, Invisalign, self-ligating braces, twin brackets, SmartSTL",
+      "metrics_sought": "chair time reduction, appointment frequency, ROI, profitability, time saving, visit reduction, ongoing monitoring costs vs benefits, efficiency in bracket systems, rentability, adaptive aligner change, average visit reduction, efficiency in second and third order movements",
+      "doctor_objections": "Doctors are skeptical that DM will actually reduce chair time, appointments, or costs, and want proof that it improves efficiency or profitability compared to their current workflow. Some question whether the investment in DM is justified by measurable practice gains.",
+      "evidence_type_needed": "academic publication, case study, white paper, peer-reviewed, recent studies, only Australian studies, only German studies, only academic publication, no format preference specified — reps asked for any available evidence",
       "sample_queries": [
         "How much chair time reduction achieved",
         "How can I make DM work in a practice with 8 chairs and 15 assistants in a way that they really get the real benefits and make it work financially as well in The Netherlands?",
@@ -121,151 +121,153 @@
         "Are Damon brackets more efficient than other brands?",
         "Reduced chair time, recent studies, practice efficiencies for aligners"
       ],
-      "gap_assessment": "There is a need for robust, comparative studies quantifying time and cost savings, especially for specific brands and in diverse practice settings. More localized or specialty-specific ROI data would help address persistent skepticism."
+      "gap_assessment": "Direct comparative studies quantifying ROI and efficiency gains for specific appliances and geographies are limited. More robust, region-specific economic analyses and real-world practice workflow data are needed."
     },
     {
-      "title": "Accuracy and reliability of DM’s AI for clinical monitoring and diagnosis versus human assessment",
+      "title": "Accuracy and reliability of DM’s AI and SmartSTL for clinical monitoring and diagnosis",
       "count": 67,
-      "brands_and_products": "SmartSTL, Damon, Spark, Invisalign",
-      "metrics_sought": "AI accuracy, specificity and sensitivity, reliability, occlusal assessment, class I goal, FDA application, accuracy of scanning, aligner unseat tracking",
-      "doctor_objections": "Doctors question whether DM’s AI is as accurate as a clinician in detecting clinical changes, tracking aligner fit, or identifying issues. Some are concerned about regulatory validation and want proof the AI is reliable for diagnosis and triage.",
-      "evidence_type_needed": "academic publication, peer-reviewed, white paper, No format preference specified — reps asked for any available evidence",
+      "brands_and_products": "SmartSTL, Spark, intraoralscan, Angel",
+      "metrics_sought": "AI accuracy, specificity and sensitivity, reliability, accuracy of SmartSTL, occlusal assessment, class I goal, accuracy of scanning, AI efficiency, predictability, FDA class I, accuracy with aligner unseats",
+      "doctor_objections": "Doctors question whether DM’s AI and SmartSTL are accurate enough for clinical decision-making, especially compared to in-person or intraoral scans. Some are concerned about false positives/negatives or regulatory validation.",
+      "evidence_type_needed": "academic publication, white paper, clinical study, peer-reviewed, no format preference specified — reps asked for any available evidence",
       "sample_queries": [
-        "Information on the accuracy of DM, a patient has questioned the ability of the AI to detect clinical observations",
-        "Specificity and sensitivity results for FDA application",
         "Occlusal Assessment: A quantitative study validating the AI’s accuracy in detecting malocclusions (midline deviation, overbite, overjet, and canine relationship) found that the mean bias across all parameters was less than 0.5 mm, confirming its reliability as a remote diagnosis and triage tool.",
         "How accurate is DentalMonitorings AI and will it save me money",
+        "Looking for white papers on Smart STL accuracy to help convince a doctor to use it in the practice.",
+        "Specificity and sensitivity results for FDA application",
         "How accurate is SmartSTL AI"
       ],
-      "gap_assessment": "More head-to-head studies comparing AI versus orthodontist assessments, especially for specific clinical tasks and regulatory endpoints, are needed. Evidence for pediatric and special case accuracy is also limited."
+      "gap_assessment": "There is a need for more peer-reviewed, head-to-head accuracy studies (especially for SmartSTL) and regulatory validation data. Evidence comparing AI/SmartSTL to gold-standard clinical assessments is especially valued."
     },
     {
-      "title": "Patient experience, satisfaction, and compliance with DM-monitored orthodontic treatment",
+      "title": "Patient experience, satisfaction, and compliance with DM-monitored orthodontic care",
       "count": 41,
-      "brands_and_products": "Damon, Spark, SmartSTL, Engage",
-      "metrics_sought": "patient experience, patient perception, patient engagement, compliance, staff satisfaction, time spent on app, practice differentiation",
-      "doctor_objections": "Doctors are unsure if patients actually like using DM, if it improves compliance, or if it creates extra burden. Some want to know if staff find it easier or harder to use.",
-      "evidence_type_needed": "academic publication, case study, No format preference specified — reps asked for any available evidence",
+      "brands_and_products": "Damon, Spark, Lightforce, SmartSTL",
+      "metrics_sought": "patient experience, patient satisfaction, patient perception, patient engagement, compliance, time spent on app, staff satisfaction, practice differentiation",
+      "doctor_objections": "Doctors are unsure if patients will accept or prefer remote monitoring, and whether it will improve compliance or satisfaction. Some worry about increased burden or reduced perceived value.",
+      "evidence_type_needed": "academic publication, case study, peer-reviewed, no format preference specified — reps asked for any available evidence",
       "sample_queries": [
         "Is there any evidence on how much patients like DentalMonitoring",
-        "what is the stats on staff satisfaction using dm",
         "Patient experience and satisfaction from DM use",
-        "I want to see evidence that shows DM results in improved compliance in wearing aligners",
-        "Patient scanning and compliance"
+        "what is the stats on staff satisfaction using dm",
+        "Patient scanning and compliance",
+        "Patient experience with Dental Monitoring"
       ],
-      "gap_assessment": "More quantitative and qualitative data on patient and staff satisfaction, especially longitudinal studies and those comparing DM to standard care, would be valuable."
+      "gap_assessment": "More quantitative and qualitative studies on patient and staff satisfaction, compliance, and perceived value are needed, especially across different age groups and treatment types."
     },
     {
-      "title": "Clinical effectiveness of DM for reducing refinements, improving tracking, and optimizing aligner outcomes",
-      "count": 29,
+      "title": "Reduction in aligner refinements, improved tracking, and treatment outcomes with DM",
+      "count": 28,
       "brands_and_products": "Spark, Angel, Invisalign, clearcorrect, suresmile, SmartSTL",
-      "metrics_sought": "refinement reduction, nontracking aligners, aligner fit, number of refinements, unfinished aligner sets, compliance, fitting and tacking quality",
-      "doctor_objections": "Doctors are skeptical that DM actually reduces the number of refinements or improves aligner tracking and fit. They want proof that DM leads to better clinical outcomes for aligner cases.",
-      "evidence_type_needed": "academic publication, No format preference specified — reps asked for any available evidence",
+      "metrics_sought": "number of refinements, nontracking aligners, aligner unseat tracking, unfinished aligner sets, improved compliance, reduced need and length of refinements, fitting and tracking quality",
+      "doctor_objections": "Doctors are skeptical that DM monitoring will actually reduce the number of refinements or improve aligner tracking and outcomes. They want proof that DM leads to fewer mid-course corrections and better results.",
+      "evidence_type_needed": "academic publication, case study, no format preference specified — reps asked for any available evidence",
       "sample_queries": [
-        "I am looking for fitting and tacking quality between different aligner brands. Specifically Spark, Angel, Invisalign, clearcorrect and suresmile",
         "I have a doctor looking for evidence showing that DM has reduced the number of refinements needed for patients.",
+        "I am looking for fitting and tacking quality between different aligner brands. Specifically Spark, Angel, Invisalign, clearcorrect and suresmile",
         "Evidence on DM reducing the need and length of aligner refinements",
         "Help with reducing refinements",
         "number of refinements for monitored patients, nontracking aligners, no-Go influence, unfinished aligner sets"
       ],
-      "gap_assessment": "Direct comparative studies on refinement rates and tracking outcomes with and without DM, especially across multiple aligner brands, are limited and should be prioritized."
+      "gap_assessment": "Direct comparative studies showing reduction in refinements and improved tracking with DM across multiple aligner brands are scarce. More outcome-based research is needed."
     },
     {
-      "title": "Clinical workflow integration and staff adaptation when implementing DM in orthodontic practices",
-      "count": 28,
+      "title": "Clinical effectiveness and workflow integration of DM for retention monitoring",
+      "count": 19,
       "brands_and_products": "None mentioned explicitly",
-      "metrics_sought": "practice workflow, staff efficiency, diary changes, multi-location adaptation, dynamic scheduling, team communication",
-      "doctor_objections": "Doctors and staff are concerned about how DM will fit into their existing workflow, whether it will disrupt schedules, and if the team can adapt without increased stress or confusion.",
-      "evidence_type_needed": "No format preference specified — reps asked for any available evidence",
-      "sample_queries": [
-        "Explain to that prospect what integrating DM means concretely for them and their team",
-        "multi location practice and doctor is considering quitting DM",
-        "How can I make DM work in a practice with 8 chairs and 15 assistants in a way that they really get the real benefits and make it work financially as well in The Netherlands?",
-        "dynamic scheduling",
-        "Flowless communication inside the team"
-      ],
-      "gap_assessment": "More real-world case studies and workflow mapping for different practice sizes and geographies would help address these concerns."
-    },
-    {
-      "title": "SmartSTL and 3D monitoring: accuracy, reliability, and clinical application in orthodontics",
-      "count": 27,
-      "brands_and_products": "SmartSTL, Angel, Spark, itero",
-      "metrics_sought": "SmartSTL accuracy, reliability, comparison to intraoral scan, 3D monitoring, refinement accuracy",
-      "doctor_objections": "Doctors are unsure if SmartSTL is as accurate or reliable as other 3D scanning solutions, and want to know if it adds clinical value or is just another gadget.",
-      "evidence_type_needed": "academic publication, white paper, No format preference specified — reps asked for any available evidence",
-      "sample_queries": [
-        "SmartSTL accuracy academic publications",
-        "I'm looking for scientific / data-based evidence on the reliability of SmartSTL.",
-        "Accuracy of Smart STL for refinement",
-        "Is Smart STL like an intraoralscan?",
-        "Looking for white papers on Smart STL accuracy to help convince a doctor to use it in the practice."
-      ],
-      "gap_assessment": "Head-to-head studies comparing SmartSTL to other 3D scanning and monitoring solutions, especially for clinical endpoints, are needed."
-    },
-    {
-      "title": "Retention phase monitoring: value, outcomes, and business impact of DM for retention patients",
-      "count": 17,
-      "brands_and_products": "None mentioned explicitly",
-      "metrics_sought": "retention lapse percentage, retention optimisation, value for retention, retention plans, business expansion via retention",
-      "doctor_objections": "Doctors are unconvinced that DM adds value during the retention phase or that it can help generate revenue or improve outcomes for retention patients.",
-      "evidence_type_needed": "No format preference specified — reps asked for any available evidence",
+      "metrics_sought": "retention optimisation, percentage lapse in retention, value for retention, retention plans, expand retention side of business",
+      "doctor_objections": "Doctors question whether DM adds value in the retention phase, and if it can help prevent relapse or improve long-term outcomes. Some are unsure if it’s worth the extra effort or cost.",
+      "evidence_type_needed": "academic publication, case study, no format preference specified — reps asked for any available evidence",
       "sample_queries": [
         "Help me convince a Dr that monitoring retention brings value to their practice",
         "Is DM efficient for retention?",
         "How we can expand the retention side of the business. What organisations we can partner with.",
         "percentage lapse in retention",
-        "How retention can generate money but applicable to small french practice (600 patients)"
+        "value DM for retention monitoring"
       ],
-      "gap_assessment": "More data on clinical and business outcomes for DM-monitored retention patients, including lapse rates and revenue impact, would be valuable."
+      "gap_assessment": "Evidence on DM’s impact during retention, including relapse rates and patient engagement, is limited. More long-term studies and business case examples are needed."
     },
     {
-      "title": "DM’s impact on oral hygiene, hygiene-related outcomes, and hygiene compliance",
-      "count": 13,
-      "brands_and_products": "Invisalign",
-      "metrics_sought": "hygiene, leucome reduction, oral hygiene with braces, hygiene compliance, reduction time of treatment",
-      "doctor_objections": "Doctors want to know if DM actually improves oral hygiene outcomes or compliance, or if it just adds another step for patients.",
-      "evidence_type_needed": "academic publication, No format preference specified — reps asked for any available evidence",
+      "title": "Clinical and workflow benefits of DM for hygiene monitoring and oral health outcomes",
+      "count": 16,
+      "brands_and_products": "Invisalign, SmartSTL",
+      "metrics_sought": "hygiene, reduction time of treatment, pourcentage de leucome réduit, oral hygiene braces",
+      "doctor_objections": "Doctors are unsure if DM monitoring improves oral hygiene or reduces hygiene-related complications during orthodontic treatment. Some want proof of reduced decalcification or better hygiene compliance.",
+      "evidence_type_needed": "academic publication, only academic publication, no format preference specified — reps asked for any available evidence",
       "sample_queries": [
         "General dentist that wants some information on aligners and hygiene",
         "Pourcentage de leucome réduit avec DM",
-        "Reduction time of treatment",
         "hygiene and invisalign",
-        "oral hygiene braces"
+        "focus hygiène",
+        "Reduction time of treatment"
       ],
-      "gap_assessment": "More controlled studies on hygiene outcomes and compliance, especially for different appliance types, are needed."
+      "gap_assessment": "There is a lack of robust, quantitative studies linking DM monitoring to improved hygiene outcomes or reduced complications. More clinical trials and hygiene-specific outcome data are needed."
     },
     {
-      "title": "DM for pediatric, phase 1, and early intervention orthodontic cases: benefits and outcomes",
-      "count": 11,
-      "brands_and_products": "None mentioned explicitly",
-      "metrics_sought": "phase 1 monitoring, observation monitoring, pediatric outcomes, early intervention",
-      "doctor_objections": "Doctors are unsure if DM is suitable or effective for younger patients or early phase treatments, and want to see evidence specific to these populations.",
-      "evidence_type_needed": "No format preference specified — reps asked for any available evidence",
+      "title": "DM’s impact on pediatric, phase 1, and early intervention orthodontic cases",
+      "count": 14,
+      "brands_and_products": "Herbst expanders, twin brackets, Angel, SmartSTL",
+      "metrics_sought": "observation monitoring, phase 1 monitoring, elastic compliance, virtual clinics, pediatric outcomes",
+      "doctor_objections": "Doctors are uncertain if DM is suitable or effective for younger patients or early intervention cases, and whether it can support unique needs like expanders or mixed dentition.",
+      "evidence_type_needed": "academic publication, case study, no format preference specified — reps asked for any available evidence",
       "sample_queries": [
         "Further material benefits of monitoring Phase 1",
         "Observation monitoring",
-        "pediatric",
         "DM for kids.",
-        "Module fixed bracket and wires, time saving"
+        "pediatric",
+        "herbst expanders twin brackets ondemand scheduling damon ultima angel stl"
       ],
-      "gap_assessment": "Evidence for DM’s effectiveness and workflow impact in pediatric and phase 1 cases is sparse and should be expanded."
+      "gap_assessment": "Evidence for DM’s effectiveness in pediatric and phase 1 cases is limited. More age-specific studies and workflow integration examples are needed."
     },
     {
-      "title": "Engage and patient acquisition: impact of DM tools on new patient starts and marketing",
-      "count": 9,
+      "title": "Practice workflow transformation and staff experience with DM implementation",
+      "count": 28,
+      "brands_and_products": "None mentioned explicitly",
+      "metrics_sought": "practice workflow, staff efficiency, staff satisfaction, diary changes, dynamic scheduling, flowless communication inside the team, multi-location practice, practice differentiation",
+      "doctor_objections": "Doctors and staff are concerned about the complexity of integrating DM into existing workflows, potential disruption, and whether staff will adapt or benefit. Some worry about increased workload or unclear roles.",
+      "evidence_type_needed": "academic publication, case study, video links, no format preference specified — reps asked for any available evidence",
+      "sample_queries": [
+        "Explain to that prospect what integrating DM means concretely for them and their team",
+        "staff satisfaction",
+        "multi location practice and doctor is considering quitting DM",
+        "dynamic scheduling",
+        "Flowless communication inside the team"
+      ],
+      "gap_assessment": "More real-world workflow case studies, staff satisfaction surveys, and practical integration guides are needed, especially for larger or multi-site practices."
+    },
+    {
+      "title": "DM’s role in patient acquisition, marketing, and practice growth (including Engage)",
+      "count": 11,
       "brands_and_products": "Engage",
-      "metrics_sought": "patient acquisition, new patient starts, clinical interest, perception of Engage",
-      "doctor_objections": "Doctors are skeptical that Engage or DM tools will actually help them attract new patients or improve marketing outcomes.",
-      "evidence_type_needed": "academic publication, success story, No format preference specified — reps asked for any available evidence",
+      "metrics_sought": "patient acquisition, new patient starts, practice growth, clinical perception, get the doctor more involved with DM",
+      "doctor_objections": "Doctors are skeptical that DM or Engage will help attract new patients or grow their practice. Some want proof of marketing impact or differentiation.",
+      "evidence_type_needed": "academic publication, success story, case study, no format preference specified — reps asked for any available evidence",
       "sample_queries": [
         "I want to know how Engage is improving patient's acquisition",
         "increase new patient starts",
         "success story using Engage",
-        "Je souhaiterais des études prouvant l'intérêt clinique et la perception des patients",
-        "all about engage"
+        "Info to give parents",
+        "Je souhaiterais des études prouvant l'intérêt clinique et la perception des patients"
       ],
-      "gap_assessment": "More case studies and quantitative data on patient acquisition and marketing impact of Engage and related DM tools are needed."
+      "gap_assessment": "There is limited published evidence on DM’s impact on patient acquisition and marketing outcomes. More case studies and marketing analytics are needed."
+    },
+    {
+      "title": "Environmental impact, sustainability, and digital transformation with DM and virtual care",
+      "count": 6,
+      "brands_and_products": "None mentioned explicitly",
+      "metrics_sought": "empreinte ecologique, digital transformation, virtual clinics",
+      "doctor_objections": "Doctors are curious or skeptical about the environmental benefits of DM and whether digital workflows are truly more sustainable or efficient.",
+      "evidence_type_needed": "no format preference specified — reps asked for any available evidence",
+      "sample_queries": [
+        "empreinte ecologique",
+        "optimisation of a practice full aligner using Virtualcare",
+        "virtual clinics",
+        "difference between Dental Monitoring and Virtual Care",
+        "workflow"
+      ],
+      "gap_assessment": "Evidence on DM’s environmental impact and digital transformation benefits is sparse. Sustainability analyses and digital workflow case studies should be prioritized."
     }
-  ]
+  ],
+  "outliers": [],
+  "last_run_mode": "full_recompute"
 }
