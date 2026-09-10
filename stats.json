@@ -289,6 +289,6 @@
     }
   ],
   "outliers": [],
-  "last_run_mode": "full_recompute",
+  "last_run_mode": "incremental",
   "clustered_through": "2026-09-10T09:36:18.000Z"
 }
