@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-10",
-  "total_requests": 463,
-  "unique_users": 248,
+  "updated": "2026-09-14",
+  "total_requests": 465,
+  "unique_users": 249,
   "avg_req_per_user": 1.9,
   "peak_month": "2025-08",
   "peak_requests": 80,
@@ -19,7 +19,7 @@
       "count": 10
     },
     {
-      "name": "GEMMA Holland",
+      "name": "Gemma Holland",
       "count": 9
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "label": "Aligners",
-      "count": 182
+      "count": 183
     },
     {
       "label": "SmartSTL",
@@ -42,7 +42,7 @@
     },
     {
       "label": "AI accuracy",
-      "count": 148
+      "count": 149
     },
     {
       "label": "Practice efficiency",
@@ -122,8 +122,8 @@
     },
     {
       "month": "2026-09",
-      "requests": 7,
-      "users": 5
+      "requests": 9,
+      "users": 7
     }
   ],
   "top_needs": [
@@ -136,7 +136,7 @@
       "evidence_type_needed": "No format preference specified — reps asked for any available evidence",
       "sample_queries": [
         "How much chair time reduction achieved",
-        "How can I make DM work in a practice with 8 chairs and 15 assistants in a way that they really get the real benefits and make it work financially as well in The Netherlands?",
+        "How can I make DM work in a practice with 8 chairs and 15 assistants in a way that they really get the real benefits and make it financially as well in The Netherlands?",
         "Could you provide any data demonstrating improved patient compliance with DM or its impact on patient outcomes",
         "Are Damon brackets more efficient than other brands?",
         "Real decrease in number of appointments with brackets and aligners without compromising treatment quality and treatment duration"
@@ -145,7 +145,7 @@
     },
     {
       "title": "Accuracy and reliability of DM’s AI for clinical monitoring and diagnosis versus human assessment",
-      "count": 81,
+      "count": 82,
       "brands_and_products": "SmartSTL, Spark, Damon, Invisalign, self-ligating braces",
       "metrics_sought": "AI accuracy, specificity and sensitivity, reliability, comparison to orthodontist, occlusal assessment, passivity detection, unseat tracking",
       "doctor_objections": "How accurate is the AI compared to a human? Can I trust it to detect clinical issues or will it miss things? I’m skeptical about relying on AI for diagnosis and monitoring.",
@@ -155,7 +155,8 @@
         "Specificity and sensitivity results for FDA application",
         "Occlusal Assessment: A quantitative study validating the AI’s accuracy in detecting malocclusions (midline deviation, overbite, overjet, and canine relationship) found that the mean bias across all parameters was less than 0.5 mm, confirming its reliability as a remote diagnosis and triage tool.",
         "I have a doctor who doesn't trust the accuracy of the AI.  I'd like to receive information regarding the accuracy.",
-        "AI accuracy studies, comparison AI reports vs human specialists comparison"
+        "AI accuracy studies, comparison AI reports vs human specialists comparison",
+        "Accuracy of bracket debonding detection"
       ],
       "gap_assessment": "Head-to-head studies comparing DM AI to orthodontist assessments for specific clinical findings are rare. More peer-reviewed, quantitative validation studies are needed, especially for new AI features and in diverse populations."
     },
@@ -177,7 +178,7 @@
     },
     {
       "title": "Reduction in aligner refinements and improved treatment predictability with DM remote monitoring",
-      "count": 36,
+      "count": 37,
       "brands_and_products": "Spark, Invisalign, Angel, ClearCorrect, Suresmile",
       "metrics_sought": "refinement reduction, number of refinements, nontracking aligners, unfinished aligner sets, predictability parameters, treatment duration",
       "doctor_objections": "Does DM actually reduce the number of refinements or improve predictability for aligner cases? Or is it just another layer of monitoring without clinical benefit?",
@@ -187,7 +188,8 @@
         "I have a doctor looking for evidence showing that DM has reduced the number of refinements needed for patients.",
         "number of refinements for monitored patients, nontracking aligners, no-Go influence, unfinished aligner sets",
         "Evidence on DM reducing the need and length of aligner refinements",
-        "Worldwide, prediction ability od dental monitoring in treatment duration or first refinement need"
+        "Worldwide, prediction ability od dental monitoring in treatment duration or first refinement need",
+        "Adaptive scan interval; increased risk for nerve damage or root resorption"
       ],
       "gap_assessment": "Direct, controlled studies quantifying refinement reduction and improved predictability with DM are scarce. More large-scale, comparative outcome studies are needed."
     },
@@ -290,5 +292,5 @@
   ],
   "outliers": [],
   "last_run_mode": "incremental",
-  "clustered_through": "2026-09-10T09:36:18.000Z"
+  "clustered_through": "2026-09-12T01:14:03.000Z"
 }
