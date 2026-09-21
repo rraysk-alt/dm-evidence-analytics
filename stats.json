@@ -1,8 +1,8 @@
 {
-  "updated": "2026-09-14",
-  "total_requests": 465,
-  "unique_users": 249,
-  "avg_req_per_user": 1.9,
+  "updated": "2026-09-21",
+  "total_requests": 480,
+  "unique_users": 261,
+  "avg_req_per_user": 1.8,
   "peak_month": "2025-08",
   "peak_requests": 80,
   "top_users": [
@@ -30,23 +30,23 @@
   "top_topics": [
     {
       "label": "Braces",
-      "count": 184
+      "count": 191
     },
     {
       "label": "Aligners",
-      "count": 183
+      "count": 189
     },
     {
       "label": "SmartSTL",
-      "count": 152
+      "count": 163
     },
     {
       "label": "AI accuracy",
-      "count": 149
+      "count": 155
     },
     {
       "label": "Practice efficiency",
-      "count": 134
+      "count": 143
     }
   ],
   "monthly": [
@@ -122,14 +122,14 @@
     },
     {
       "month": "2026-09",
-      "requests": 9,
-      "users": 7
+      "requests": 24,
+      "users": 21
     }
   ],
   "top_needs": [
     {
       "title": "Practice efficiency gains and ROI with DM-monitored braces and aligners versus standard recall",
-      "count": 142,
+      "count": 147,
       "brands_and_products": "Damon, Ormco, Spark, Angel, Invisalign, ClearCorrect, Suresmile, KLOwen, Lightforce, SmartSTL, SLB, Twin brackets, self-ligating braces",
       "metrics_sought": "chair time reduction, appointment frequency, ROI, profitability, time saving, rentability, staff efficiency, practice optimisation, emergency reduction, adaptive aligner change, visit reduction, ongoing monitoring costs vs benefits",
       "doctor_objections": "I don't see how DM will actually save us time or money. Will it really reduce appointments or chair time, or just add complexity? Is the ROI proven for my practice type and appliance mix?",
@@ -145,7 +145,7 @@
     },
     {
       "title": "Accuracy and reliability of DM’s AI for clinical monitoring and diagnosis versus human assessment",
-      "count": 82,
+      "count": 86,
       "brands_and_products": "SmartSTL, Spark, Damon, Invisalign, self-ligating braces",
       "metrics_sought": "AI accuracy, specificity and sensitivity, reliability, comparison to orthodontist, occlusal assessment, passivity detection, unseat tracking",
       "doctor_objections": "How accurate is the AI compared to a human? Can I trust it to detect clinical issues or will it miss things? I’m skeptical about relying on AI for diagnosis and monitoring.",
@@ -162,7 +162,7 @@
     },
     {
       "title": "Patient experience, satisfaction, and compliance with DM-monitored orthodontic treatment",
-      "count": 54,
+      "count": 55,
       "brands_and_products": "Damon, Spark, Lightforce, SmartSTL, ScanBox",
       "metrics_sought": "patient satisfaction, patient perception, patient engagement, compliance, staff satisfaction, time spent on app, practice differentiation",
       "doctor_objections": "Will patients actually like using DM? Does it improve their experience or just add hassle? Will my staff and patients really engage with the technology?",
@@ -195,7 +195,7 @@
     },
     {
       "title": "Clinical effectiveness and workflow integration of DM for retention phase monitoring",
-      "count": 28,
+      "count": 29,
       "brands_and_products": "None mentioned explicitly",
       "metrics_sought": "retention lapse percentage, retention optimisation, value of retention monitoring, business expansion via retention, supervisor during retention",
       "doctor_objections": "Is DM really useful for retention? Does it add value or just create more work? How can I expand my retention business with DM?",
@@ -208,6 +208,22 @@
         "How retention can generate money but applicable to small french practice (600 patients)"
       ],
       "gap_assessment": "Evidence on clinical outcomes and business impact of DM in the retention phase is limited. More studies on retention lapse rates and workflow integration are needed."
+    },
+    {
+      "title": "Accuracy, reliability, and clinical value of SmartSTL for 3D monitoring and refinement",
+      "count": 23,
+      "brands_and_products": "SmartSTL, Spark, Angel, iTero",
+      "metrics_sought": "SmartSTL accuracy, reliability, refinement fit, comparison to intraoral scan, predictability",
+      "doctor_objections": "Can I trust SmartSTL for accurate 3D monitoring and refinements? Is it as reliable as an intraoral scan? What’s the clinical value?",
+      "evidence_type_needed": "academic publication, white paper, clinical study, no format preference specified — reps asked for any available evidence",
+      "sample_queries": [
+        "Accuracy with SmartSTL",
+        "Is Smart STL like an intraoralscan?",
+        "Accuracy of Smart STL for refinement",
+        "I'm looking for scientific / data-based evidence on the reliability of SmartSTL.",
+        "Looking for white papers on Smart STL accuracy to help convince a doctor to use it in the practice."
+      ],
+      "gap_assessment": "Direct comparative studies between SmartSTL and intraoral scans are limited. More clinical validation and reliability studies are needed."
     },
     {
       "title": "Clinical and workflow benefits of DM for early treatment (Phase 1) and observation monitoring",
@@ -224,22 +240,6 @@
         "what feedback on using DM before acceptance of the treatment?"
       ],
       "gap_assessment": "Few studies focus specifically on Phase 1 or observation cohorts. More evidence on conversion rates, workflow impact, and early intervention outcomes is needed."
-    },
-    {
-      "title": "Accuracy, reliability, and clinical value of SmartSTL for 3D monitoring and refinement",
-      "count": 21,
-      "brands_and_products": "SmartSTL, Spark, Angel, iTero",
-      "metrics_sought": "SmartSTL accuracy, reliability, refinement fit, comparison to intraoral scan, predictability",
-      "doctor_objections": "Can I trust SmartSTL for accurate 3D monitoring and refinements? Is it as reliable as an intraoral scan? What’s the clinical value?",
-      "evidence_type_needed": "academic publication, white paper, clinical study, no format preference specified — reps asked for any available evidence",
-      "sample_queries": [
-        "Accuracy with SmartSTL",
-        "Is Smart STL like an intraoralscan?",
-        "Accuracy of Smart STL for refinement",
-        "I'm looking for scientific / data-based evidence on the reliability of SmartSTL.",
-        "Looking for white papers on Smart STL accuracy to help convince a doctor to use it in the practice."
-      ],
-      "gap_assessment": "Direct comparative studies between SmartSTL and intraoral scans are limited. More clinical validation and reliability studies are needed."
     },
     {
       "title": "Clinical and business impact of DM Engage on patient acquisition and doctor engagement",
@@ -275,7 +275,7 @@
     },
     {
       "title": "Comparative effectiveness and workflow impact of DM versus other remote monitoring solutions (e.g., Invisalign Virtual Care)",
-      "count": 7,
+      "count": 9,
       "brands_and_products": "Invisalign Virtual Care, DM Insights",
       "metrics_sought": "practice efficiency, workflow, patient compliance, patient outcomes",
       "doctor_objections": "How does DM compare to other remote monitoring platforms like Invisalign Virtual Care? Is it better for efficiency or outcomes?",
@@ -292,5 +292,5 @@
   ],
   "outliers": [],
   "last_run_mode": "incremental",
-  "clustered_through": "2026-09-12T01:14:03.000Z"
+  "clustered_through": "2026-09-18T15:43:39.000Z"
 }
