@@ -1,7 +1,7 @@
 {
-  "updated": "2026-09-21",
-  "total_requests": 480,
-  "unique_users": 261,
+  "updated": "2026-09-28",
+  "total_requests": 482,
+  "unique_users": 262,
   "avg_req_per_user": 1.8,
   "peak_month": "2025-08",
   "peak_requests": 80,
@@ -30,7 +30,7 @@
   "top_topics": [
     {
       "label": "Braces",
-      "count": 191
+      "count": 192
     },
     {
       "label": "Aligners",
@@ -38,7 +38,7 @@
     },
     {
       "label": "SmartSTL",
-      "count": 163
+      "count": 164
     },
     {
       "label": "AI accuracy",
@@ -122,14 +122,14 @@
     },
     {
       "month": "2026-09",
-      "requests": 24,
-      "users": 21
+      "requests": 26,
+      "users": 23
     }
   ],
   "top_needs": [
     {
       "title": "Practice efficiency gains and ROI with DM-monitored braces and aligners versus standard recall",
-      "count": 147,
+      "count": 148,
       "brands_and_products": "Damon, Ormco, Spark, Angel, Invisalign, ClearCorrect, Suresmile, KLOwen, Lightforce, SmartSTL, SLB, Twin brackets, self-ligating braces",
       "metrics_sought": "chair time reduction, appointment frequency, ROI, profitability, time saving, rentability, staff efficiency, practice optimisation, emergency reduction, adaptive aligner change, visit reduction, ongoing monitoring costs vs benefits",
       "doctor_objections": "I don't see how DM will actually save us time or money. Will it really reduce appointments or chair time, or just add complexity? Is the ROI proven for my practice type and appliance mix?",
@@ -211,7 +211,7 @@
     },
     {
       "title": "Accuracy, reliability, and clinical value of SmartSTL for 3D monitoring and refinement",
-      "count": 23,
+      "count": 24,
       "brands_and_products": "SmartSTL, Spark, Angel, iTero",
       "metrics_sought": "SmartSTL accuracy, reliability, refinement fit, comparison to intraoral scan, predictability",
       "doctor_objections": "Can I trust SmartSTL for accurate 3D monitoring and refinements? Is it as reliable as an intraoral scan? What’s the clinical value?",
@@ -292,5 +292,5 @@
   ],
   "outliers": [],
   "last_run_mode": "incremental",
-  "clustered_through": "2026-09-18T15:43:39.000Z"
+  "clustered_through": "2026-09-27T19:18:22.000Z"
 }
