@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-05",
-  "total_requests": 484,
+  "updated": "2026-10-12",
+  "total_requests": 485,
   "unique_users": 262,
-  "avg_req_per_user": 1.8,
+  "avg_req_per_user": 1.9,
   "peak_month": "2025-08",
   "peak_requests": 80,
   "top_users": [
@@ -127,7 +127,7 @@
     },
     {
       "month": "2026-10",
-      "requests": 2,
+      "requests": 3,
       "users": 2
     }
   ],
@@ -278,7 +278,7 @@
     },
     {
       "title": "Oral hygiene, safety, and clinical outcomes with DM-monitored orthodontic treatment",
-      "count": 16,
+      "count": 17,
       "brands_and_products": "Damon, SmartSTL, Invisalign",
       "metrics_sought": "hygiene, leucome reduction, reduction time of treatment, oral hygiene benefits, GP dentist hygiene, percentage of leucome reduced, oral hygiene braces",
       "doctor_objections": "Doctors are unsure if DM improves oral hygiene or reduces risks during orthodontic treatment. Some want proof of safety or hygiene benefits, especially for braces and aligners.",
@@ -294,6 +294,6 @@
     }
   ],
   "outliers": [],
-  "last_run_mode": "full_recompute",
-  "clustered_through": "2026-10-02T14:18:30.000Z"
+  "last_run_mode": "incremental",
+  "clustered_through": "2026-10-08T22:40:28.000Z"
 }
