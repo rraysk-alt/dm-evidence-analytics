@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-12",
-  "total_requests": 485,
-  "unique_users": 262,
-  "avg_req_per_user": 1.9,
+  "updated": "2026-10-19",
+  "total_requests": 487,
+  "unique_users": 264,
+  "avg_req_per_user": 1.8,
   "peak_month": "2025-08",
   "peak_requests": 80,
   "top_users": [
@@ -30,23 +30,23 @@
   "top_topics": [
     {
       "label": "Braces",
-      "count": 193
+      "count": 195
     },
     {
       "label": "Aligners",
-      "count": 189
+      "count": 191
     },
     {
       "label": "SmartSTL",
-      "count": 164
+      "count": 165
     },
     {
       "label": "AI accuracy",
-      "count": 156
+      "count": 158
     },
     {
       "label": "Practice efficiency",
-      "count": 144
+      "count": 146
     }
   ],
   "monthly": [
@@ -127,8 +127,8 @@
     },
     {
       "month": "2026-10",
-      "requests": 3,
-      "users": 2
+      "requests": 5,
+      "users": 4
     }
   ],
   "top_needs": [
@@ -160,7 +160,8 @@
         "Specificity and sensitivity results for FDA application",
         "Occlusal Assessment: A quantitative study validating the AI’s accuracy in detecting malocclusions (midline deviation, overbite, overjet, and canine relationship) found that the mean bias across all parameters was less than 0.5 mm, confirming its reliability as a remote diagnosis and triage tool.",
         "I have a doctor who doesn't trust the accuracy of the AI.  I'd like to receive information regarding the accuracy.",
-        "Looking for white papers on Smart STL accuracy to help convince a doctor to use it in the practice."
+        "Looking for white papers on Smart STL accuracy to help convince a doctor to use it in the practice.",
+        "Evidence to support the use of Dental monitoring"
       ],
       "gap_assessment": "More head-to-head studies comparing AI findings to orthodontist assessments, especially for specific clinical events (e.g., debonding, passivity, eruption), are needed. Evidence for SmartSTL’s accuracy is also in demand."
     },
@@ -182,7 +183,7 @@
     },
     {
       "title": "Peer-reviewed publications, academic studies, and white papers on DM’s clinical effectiveness and workflow",
-      "count": 48,
+      "count": 49,
       "brands_and_products": "SmartSTL, Spark, Damon, Invisalign, Angel, Lightforce",
       "metrics_sought": "academic publication, peer-reviewed, white paper, clinical study, case study, scientific publication, retrospective cohort study",
       "doctor_objections": "Doctors and reps want high-quality, peer-reviewed evidence to support claims about DM’s effectiveness, workflow, and clinical outcomes. Some need publications for lectures, tenders, or to satisfy skeptical clinicians.",
@@ -192,7 +193,8 @@
         "Peer reviewed publications",
         "I want to learn from academic articles to deepen my knowledge about these topics.",
         "Academic publications and papers from US doctors",
-        "giannetti white paper?"
+        "giannetti white paper?",
+        "Evidence to support the use of Dental monitoring"
       ],
       "gap_assessment": "A centralized, up-to-date repository of peer-reviewed publications and white papers on DM’s clinical and workflow impact is needed, including region-specific and product-specific studies."
     },
@@ -278,7 +280,7 @@
     },
     {
       "title": "Oral hygiene, safety, and clinical outcomes with DM-monitored orthodontic treatment",
-      "count": 17,
+      "count": 18,
       "brands_and_products": "Damon, SmartSTL, Invisalign",
       "metrics_sought": "hygiene, leucome reduction, reduction time of treatment, oral hygiene benefits, GP dentist hygiene, percentage of leucome reduced, oral hygiene braces",
       "doctor_objections": "Doctors are unsure if DM improves oral hygiene or reduces risks during orthodontic treatment. Some want proof of safety or hygiene benefits, especially for braces and aligners.",
@@ -288,12 +290,13 @@
         "Pourcentage de leucome réduit avec DM",
         "Reduction time of treatment",
         "resources on monitoring braces treatments with damon brackets. Evidence on appointments saved, clinical results, practice optimisation, and oral hygiene benefits. Any evidence on the use of DM with general dental and implant cases would be helpful as well",
-        "focus hygiène"
+        "focus hygiène",
+        "Reduced chair time, accuracy assessing hygiene"
       ],
       "gap_assessment": "More clinical data on hygiene outcomes, safety, and risk reduction with DM monitoring is needed, especially for fixed appliances."
     }
   ],
   "outliers": [],
   "last_run_mode": "incremental",
-  "clustered_through": "2026-10-08T22:40:28.000Z"
+  "clustered_through": "2026-10-19T02:27:16.000Z"
 }
