@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-02",
-  "total_requests": 488,
-  "unique_users": 265,
+  "updated": "2026-11-09",
+  "total_requests": 489,
+  "unique_users": 266,
   "avg_req_per_user": 1.8,
   "peak_month": "2025-08",
   "peak_requests": 80,
@@ -34,7 +34,7 @@
     },
     {
       "label": "Aligners",
-      "count": 192
+      "count": 193
     },
     {
       "label": "SmartSTL",
@@ -46,7 +46,7 @@
     },
     {
       "label": "Practice efficiency",
-      "count": 146
+      "count": 147
     }
   ],
   "monthly": [
@@ -129,6 +129,11 @@
       "month": "2026-10",
       "requests": 6,
       "users": 5
+    },
+    {
+      "month": "2026-11",
+      "requests": 1,
+      "users": 1
     }
   ],
   "top_needs": [
@@ -230,7 +235,7 @@
     },
     {
       "title": "Clinical and workflow benefits of DM for early treatment (Phase 1), observation, and pediatric cases",
-      "count": 23,
+      "count": 24,
       "brands_and_products": "None mentioned explicitly",
       "metrics_sought": "observation conversion data, observation monitoring, module fixed bracket and wires, time saving, pediatric effectiveness, protocol implementation",
       "doctor_objections": "Doctors are unsure if DM adds value in early treatment or observation phases, or if it’s practical for pediatric patients. Some question the workflow impact or conversion benefits.",
@@ -294,6 +299,6 @@
     }
   ],
   "outliers": [],
-  "last_run_mode": "full_recompute",
-  "clustered_through": "2026-10-29T06:37:44.000Z"
+  "last_run_mode": "incremental",
+  "clustered_through": "2026-11-05T02:54:24.000Z"
 }
