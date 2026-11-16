@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-09",
-  "total_requests": 489,
-  "unique_users": 266,
+  "updated": "2026-11-16",
+  "total_requests": 492,
+  "unique_users": 267,
   "avg_req_per_user": 1.8,
   "peak_month": "2025-08",
   "peak_requests": 80,
@@ -30,7 +30,7 @@
   "top_topics": [
     {
       "label": "Braces",
-      "count": 195
+      "count": 196
     },
     {
       "label": "Aligners",
@@ -42,7 +42,7 @@
     },
     {
       "label": "AI accuracy",
-      "count": 159
+      "count": 161
     },
     {
       "label": "Practice efficiency",
@@ -132,14 +132,14 @@
     },
     {
       "month": "2026-11",
-      "requests": 1,
-      "users": 1
+      "requests": 4,
+      "users": 4
     }
   ],
   "top_needs": [
     {
       "title": "Practice efficiency gains and ROI with DM-monitored braces and aligners versus standard recall",
-      "count": 142,
+      "count": 143,
       "brands_and_products": "Damon, ormco, KLOwen, Spark, Angel, Invisalign, clearcorrect, suresmile, Lightforce, SmartSTL, ScanBox, SLB, self-ligating braces, twin brackets, damon ultima brackets, traditional fixed braces o rings",
       "metrics_sought": "chair time reduction, appointment frequency, ROI, profitability, rentability, time saving, staff efficiency, diary changes, scheduling, appointment reduction, practice optimisation, emergencies reduction, dynamic scheduling, ongoing monitoring costs vs benefits, practice differentiation, staff satisfaction",
       "doctor_objections": "Doctors are skeptical that DM will actually save time or money, or that it will meaningfully reduce appointments or improve workflow. Some believe the workflow change is not worth the effort, or that the ROI is unclear, especially for braces. Others worry about staff adaptation or increased workload.",
@@ -155,7 +155,7 @@
     },
     {
       "title": "AI diagnostic accuracy and reliability of DM versus orthodontist or manual review",
-      "count": 81,
+      "count": 83,
       "brands_and_products": "SmartSTL, ScanBox, Invisalign",
       "metrics_sought": "AI accuracy, specificity and sensitivity, reliability, accuracy of bracket debonding detection, occlusal assessment, accuracy class I goal, accuracy of AI detecting eruption, accuracy of AI versus orthodontist, accuracy of scanning, accuracy with SmartSTL, AI efficiency",
       "doctor_objections": "Doctors question whether DM’s AI is as accurate as a human orthodontist, especially for clinical observations, bracket debonding, or aligner tracking. Some express distrust or fear of AI, worrying about diagnostic errors or being replaced.",
@@ -165,7 +165,9 @@
         "Specificity and sensitivity results for FDA application",
         "Occlusal Assessment: A quantitative study validating the AI’s accuracy in detecting malocclusions (midline deviation, overbite, overjet, and canine relationship) found that the mean bias across all parameters was less than 0.5 mm, confirming its reliability as a remote diagnosis and triage tool.",
         "I have a doctor who doesn't trust the accuracy of the AI.  I'd like to receive information regarding the accuracy.",
-        "how accurate is our AI?"
+        "how accurate is our AI?",
+        "Ai Accuracy on braces and aligners",
+        "Research no AI for tooth detection"
       ],
       "gap_assessment": "There is a need for more head-to-head studies comparing DM AI’s diagnostic performance to orthodontists, especially for specific clinical tasks and across appliances. Evidence on AI’s reliability in real-world, diverse populations is especially lacking."
     },
@@ -300,5 +302,5 @@
   ],
   "outliers": [],
   "last_run_mode": "incremental",
-  "clustered_through": "2026-11-05T02:54:24.000Z"
+  "clustered_through": "2026-11-13T21:07:51.000Z"
 }
